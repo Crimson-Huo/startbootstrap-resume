@@ -1,126 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Resume - Start Bootstrap Theme</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Chunguang Huo</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-<!-- About -->
-<section class="resume-section" id="about">
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>简历 - 赫春光</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome 图标 -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700|Muli:400,400i,800,800i&display=swap" rel="stylesheet" />
+    <!-- 核心 CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+      .text-brown { color: #A14D2E; }
+      .btn-social { border-radius:50%; width:45px; height:45px; font-size:20px; text-align:center; line-height:45px; }
+      .hero { text-align:center; padding:2rem 1rem 0.5rem; }
+      .hero img { width:180px; height:180px; object-fit:cover; border-radius:50%; }
+      .hero h1 { margin-top:1rem; font-size:3rem; font-family:'Saira Extra Condensed',sans-serif; font-weight:bold; }
+      .contact-icons { margin-top:1rem; }
+      .section-block { margin-top:1rem; }
+      @media (min-width:768px) {
+        .research-education-container { display:flex; justify-content:space-between; gap:2rem; margin-top:1rem; }
+        .research-education-container > div { flex:1; }
+      }
+    </style>
+  </head>
+  <body id="page-top">
+    <!-- 顶部导航栏 -->
+    <nav class="navbar navbar-dark bg-primary fixed-top">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">赫春光</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- 抽屉式菜单 -->
+    <div class="offcanvas offcanvas-start text-white bg-primary" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavLabel">导航</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="关闭"></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <ul class="list-unstyled ps-3">
+          <li class="py-2"><a class="text-white text-decoration-none" href="#about">关于</a></li>
+          <li class="py-2"><a class="text-white text-decoration-none" href="#experience">经验</a></li>
+          <li class="py-2"><a class="text-white text-decoration-none" href="#education">教育</a></li>
+          <li class="py-2"><a class="text-white text-decoration-none" href="#skills">技能</a></li>
+          <li class="py-2"><a class="text-white text-decoration-none" href="#interests">兴趣</a></li>
+          <li class="py-2"><a class="text-white text-decoration-none" href="#awards">奖项</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 头图区域 -->
+    <header class="bg-white hero" style="padding-top:4.5rem;">
+      <img src="assets/img/profile.jpg" alt="Profile" />
+      <h1 class="fw-bold">CHUNGUANG <span class="text-brown">HUO</span></h1>
+      <div class="text-muted mt-3"><i class="fas fa-map-marker-alt me-2"></i>Lund, Sweden</div>
+      <div class="text-muted"><i class="fas fa-envelope me-2"></i><span class="text-brown">huochunguang2021@163.com</span></div>
+      <div class="d-flex justify-content-center gap-3 contact-icons">
+        <a class="btn btn-dark btn-social" href="https://www.linkedin.com/in/chunguang-huo-32070829b" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a class="btn btn-dark btn-social" href="https://github.com/Crimson-Huo" target="_blank"><i class="fab fa-github"></i></a>
+        <a class="btn btn-dark btn-social" href="https://www.facebook.com/profile.php?id=61550115766390" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </header>
+
+    <div class="container-fluid p-0">
+      <!-- 关于 Section -->
+      <section class="resume-section" id="about">
         <div class="resume-section-content">
-          <h2 class="mb-4" style="font-size: 2.2rem;">Biography</h2>
+          <h2 class="mb-4" style="font-size:2.2rem;">传记</h2>
+          <p class="lead mb-4" style="text-align:justify;">
+            从小我便热衷于电子设计与制作，中学时手工打造过一艘电子小船。大学阶段我在全国及省级竞赛中屡获佳绩，包括数学建模国家奖、国家计算机设计大赛奖、辽宁省计算机设计竞赛三年省级奖项、TI杯电子设计竞赛省级奖、物理竞赛省级奖等。2020年，我在创新创业挑战赛中荣获省级奖，并获最佳创新和最佳创意双项奖（全校仅两位）。
+          </p>
+          <p class="lead mb-4" style="text-align:justify;">
+            本科期间，我主持1项省级项目，参与3项导师项目，并获3项专利。主要负责嵌入式系统设计、无线感知算法研究与物联网系统搭建。凭借优异成绩，2021年获中国航天科技集团奖学金（全校24名）；2020–2022年两次获特等奖学金（全校17名），连续3年获科技学术奖学金，并获优秀学生称号；2022年我的毕业设计被评为优秀，并获辽宁省优秀毕业生。
+          </p>
+          <p class="lead mb-4" style="text-align:justify;">
+            实践方面，2020年我在嵌入式开发和5G基站维护实习，2022年底收获清华大学天机团队、大唐电信及中科院空间应用中心聘用通知（唯一应届本科生）。最终，我加入中国科学院，专注GNSS星载接收器开发，参与DRO轨道卫星与SMILE中欧合作项目。
+          </p>
+          <p class="lead mb-3" style="text-align:justify;">
+            2023–2025年，我在瑞典隆德大学攻读无线通信硕士，研究方向涵盖无线信道、信道编码、机器学习与MIMO技术。
+          </p>
+        </div>
+      </section>
 
-          <p class="lead mb-4" style="text-align: justify;">
-            From an early age, I have been passionate about electronics design and research, successfully creating an electronic boat entirely by hand during middle school. Throughout my undergraduate studies, I won numerous national and provincial awards, including a national award in Mathematical Modeling and the National Computer Design Competition, provincial awards in the Liaoning Provincial Computer Design Competition for three consecutive years, provincial awards in the TI Cup Electronic Design Competition and Physics Competition. In 2020, I earned a provincial award in the Innovation, Creativity, and Entrepreneurship Challenge, along with the Best Innovation and Best Creativity awards (only two recipients university-wide).
-          </p>
-          <p class="lead mb-4" style="text-align: justify;">
-            During my undergraduate period, I led one provincial-level project, participated in three advisor-led projects, and secured three patents. My primary responsibilities included embedded system design, research on wireless sensing algorithms, and IoT system construction. In recognition of academic excellence, I received the China Aerospace CASC Scholarship in 2021 (only 24 recipients university-wide). From 2020 to 2022, I earned the Special-Class Scholarship twice (only 17 recipients campus-wide), received the Technology Academic Scholarship for three consecutive years, and consistently achieved the outstanding student recognition. In 2022, I was recognized for one of the best graduation projects at the university and named an Outstanding Graduate of Liaoning Province.
-          </p>
-          <p class="lead mb-4" style="text-align: justify;">
-            Regarding practical experience, I served as an intern in embedded development and 5G base station maintenance in 2020. By the end of 2022, I received employment offers from prestigious institutions such as the TianJi Team at Tsinghua University's Center for Brain-inspired Computing Research, Datang Telecom, and the Space Application Center of the Chinese Academy of Sciences (the only fresh undergraduate selected). Ultimately, I joined the Chinese Academy of Sciences, focusing on GNSS onboard receiver development and participating in major projects including DRO orbital satellites and the SMILE mission (China-Europe collaboration).
-          </p>
-          <p class="lead mb-3" style="text-align: justify;">
-            From 2023 to 2025, I pursued a Master's degree in Wireless Communications at Lund University in Sweden, specializing in wireless channels, channel coding, machine learning, and MIMO technologies.
-          </p>
+      <!-- 经验 Section -->
+      <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+          <h2 class="mb-4" style="font-size:2.2rem;">经验</h2>
+          <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+            <div>
+              <h3 class="mb-1">嵌入式软件工程师</h3>
+              <div class="text-brown mb-1">中国科学院空间应用中心</div>
+              <p>参与GNSS多源导航算法与高动态高灵敏接收机软件开发，重构DRO-B与中高轨量子卫星通信协议，搭建IF采集与数据完整性校验系统，提升测试效率25%。</p>
+            </div>
+            <div><span class="text-brown">2022.12 – 2023.08</span></div>
+          </div>
+          <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div>
+              <h3 class="mb-1">通信工程实习生</h3>
+              <div class="text-brown mb-1">沈阳纵观通信工程有限公司</div>
+              <p>维护5G基站设备与网络，监测并处理故障与告警，确保网络稳定运行。</p>
+            </div>
+            <div><span class="text-brown">2022.06 – 2022.11</span></div>
+          </div>
+        </div>
+      </section>
 
+      <!-- 教育 Section -->
+      <section class="resume-section" id="education">
+        <div class="resume-section-content">
+          <h2 class="mb-4" style="font-size:2.2rem;">教育</h2>
           <div class="research-education-container">
             <div class="section-block">
-              <h2 class="mb-3" style="font-size: 2.2rem;">Research Interests</h2>
-              <ul class="fa-ul mb-4">
-                <li><span class="fa-li"><i class="fas fa-wave-square text-brown"></i></span>Wireless Sensing</li>
-                <li><span class="fa-li"><i class="fas fa-microchip text-brown"></i></span>Embedded System Development</li>
-                <li><span class="fa-li"><i class="fas fa-network-wired text-brown"></i></span>Internet of Things (IoT)</li>
-                <li><span class="fa-li"><i class="fas fa-map-marker-alt text-brown"></i></span>Indoor Positioning</li>
-                <li><span class="fa-li"><i class="fas fa-satellite text-brown"></i></span>GNSS & Navigation</li>
-                <li><span class="fa-li"><i class="fas fa-brain text-brown"></i></span>Machine Learning</li>
-              </ul>
+              <h4 style="font-family:'Georgia',serif; font-weight:bold; color:#A14D2E; font-size:1.25rem;">隆德大学 (Lund University)</h4>
+              <div class="text-muted mb-1">无线通信硕士 (M.Sc.)</div>
+              <div class="text-muted">2023 – 2025 · 瑞典 隆德</div>
             </div>
-
             <div class="section-block">
-              <h2 class="mb-3" style="font-size: 2.2rem;">Education</h2>
-              <div class="mb-4">
-                <h4 style="font-family: 'Georgia', serif; font-weight: bold; color: #A14D2E; font-size: 1.25rem;">Lund University</h4>
-                <div class="text-muted mb-1">M.Sc. in Wireless Communication</div>
-                <div class="text-muted">2023 – 2025 · Lund, Sweden</div>
-              </div>
-              <div>
-                <h4 style="font-family: 'Georgia', serif; font-weight: bold; color: #A14D2E; font-size: 1.25rem;">Liaoning Technical University</h4>
-                <div class="text-muted mb-1">B.Eng. in Communication</div>
-                <div class="text-muted">2018 – 2022 · Ranked <strong>2nd</strong> out of 134 students</div>
-              </div>
+              <h4 style="font-family:'Georgia',serif; font-weight:bold; color:#A14D2E; font-size:1.25rem;">辽宁工程技术大学 (Liaoning Technical University)</h4>
+              <div class="text-muted mb-1">通信工程学士 (B.Eng.)</div>
+              <div class="text-muted">2018 – 2022 · 全校134人中排名 <strong>2nd</strong></div>
             </div>
           </div>
+        </div>
+      </section>
 
+      <!-- 技能 Section -->
+      <section class="resume-section" id="skills">
+        <div class="resume-section-content">
+          <h2 class="mb-4" style="font-size:2.2rem;">技能</h2>
+          <div class="mb-2">技术栈：</div>
+          <ul class="list-inline dev-icons mb-3">
+            <li class="list-inline-item"><i class="fab fa-c"></i></li>
+            <li class="list-inline-item"><i class="fab fa-python"></i></li>
+            <li class="list-inline-item"><i class="fab fa-microsoft"></i></li>
+          </ul>
+          <div>软件/工具：MATLAB, Vivado, IAR, Keil, Quartus, CAD, CCS, Zynq, STM32, DSP, GNSS模拟器</div>
+        </div>
+      </section>
+
+      <!-- 兴趣 Section -->
+      <section class="resume-section" id="interests">
+        <div class="resume-section-content">
+          <h2 class="mb-4" style="font-size:2.2rem;">兴趣</h2>
+          <ul class="fa-ul mb-0">
+            <li><span class="fa-li"><i class="fas fa-wave-square text-brown"></i></span>无线传感</li>
+            <li><span class="fa-li"><i class="fas fa-microchip text-brown"></i></span>嵌入式系统开发</li>
+            <li><span class="fa-li"><i class="fas fa-network-wired text-brown"></i></span>物联网 (IoT)</li>
+            <li><span class="fa-li"><i class="fas fa-map-marker-alt text-brown"></i></span>室内定位</li>
+            <li><span class="fa-li"><i class="fas fa-satellite text-brown"></i></span>GNSS与导航</li>
+            <li><span class="fa-li"><i class="fas fa-brain text-brown"></i></span>机器学习</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 奖项 Section -->
+      <section class="resume-section" id="awards">
+        <div class="resume-section-content">
+          <h2 class="mb-4" style="font-size:2.2rem;">奖项与专利</h2>
+          <ul class="fa-ul mb-0">
+            <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>中国航天科技集团奖学金 (Top 0.06%)</li>
+            <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>辽宁省优秀毕业生</li>
+            <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>9项国家/省级竞赛奖</li>
+            <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>3项授权专利</li>
+            <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>5篇学术论文</li>
+          </ul>
         </div>
       </section>
     </div>
-<hr class="m-0" />
 
-<!-- Skills -->
-<section class="resume-section" id="skills">
-  <div class="resume-section-content">
-    <h2 class="mb-5">Skills</h2>
-    <div class="subheading mb-3">Technical Stack</div>
-    <ul class="list-inline dev-icons">
-      <li class="list-inline-item"><i class="fab fa-c"></i></li>
-      <li class="list-inline-item"><i class="fab fa-python"></i></li>
-      <li class="list-inline-item"><i class="fab fa-microsoft"></i></li>
-    </ul>
-    <div class="subheading mb-3">Software / Tools</div>
-    <p>MATLAB, Vivado, IAR, Keil, Quartus, CAD, CCS, Zynq, STM32, DSP, GNSS simulators</p>
-  </div>
-</section>
-<hr class="m-0" />
-
-<!-- Awards -->
-<section class="resume-section" id="awards">
-  <div class="resume-section-content">
-    <h2 class="mb-5">Awards & Patents</h2>
-    <ul class="fa-ul mb-0">
-      <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span> China Aerospace Scholarship (Top 0.06%)</li>
-      <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span> Outstanding Graduate of Liaoning Province</li>
-      <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span> 9 National/Provincial Awards in Research & Innovation</li>
-      <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span> 3 Authorized Patents (Utility, Design, Software Copyright)</li>
-      <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span> 5 Published Academic Papers</li>
-    </ul>
-  </div>
-</section>
-
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
