@@ -41,7 +41,7 @@
         margin-top: 1rem;
       }
       .section-block {
-        margin-top: 2rem;
+        margin-top: 1.5rem;
       }
       @media (min-width: 768px) {
         .research-education-container {
@@ -53,9 +53,37 @@
           flex: 1;
         }
       }
+      nav {
+        background-color: #A14D2E;
+        padding: 1rem;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin: 0;
+      }
+      nav ul li {
+        font-family: 'Saira Extra Condensed', sans-serif;
+        font-size: 1.1rem;
+        color: #fff;
+      }
     </style>
   </head>
   <body id="page-top">
+    <nav>
+      <ul>
+        <li>ABOUT</li>
+        <li>EXPERIENCE</li>
+        <li>EDUCATION</li>
+        <li>SKILLS</li>
+        <li>INTERESTS</li>
+        <li>AWARDS</li>
+      </ul>
+    </nav>
     <header class="bg-white hero">
       <img src="assets/img/profile.jpg" alt="Profile" />
       <h1 class="fw-bold">CHUNGUANG <span class="text-brown">HUO</span></h1>
@@ -87,13 +115,13 @@
           <p class="lead mb-4" style="text-align: justify;">
             Regarding practical experience, I served as an intern in embedded development and 5G base station maintenance in 2020. By the end of 2022, I received employment offers from prestigious institutions such as the TianJi Team at Tsinghua University's Center for Brain-inspired Computing Research, Datang Telecom, and the Space Application Center of the Chinese Academy of Sciences (the only fresh undergraduate selected). Ultimately, I joined the Chinese Academy of Sciences, focusing on GNSS onboard receiver development and participating in major projects including DRO orbital satellites and the SMILE mission (China-Europe collaboration).
           </p>
-          <p class="lead mb-4" style="text-align: justify;">
+          <p class="lead mb-3" style="text-align: justify;">
             From 2023 to 2025, I pursued a Master's degree in Wireless Communications at Lund University in Sweden, specializing in wireless channels, channel coding, machine learning, and MIMO technologies.
           </p>
 
           <div class="research-education-container">
             <div class="section-block">
-              <h2 class="mb-4" style="font-size: 2.2rem;">Research Interests</h2>
+              <h2 class="mb-3" style="font-size: 2.2rem;">Research Interests</h2>
               <ul class="fa-ul mb-4">
                 <li><span class="fa-li"><i class="fas fa-wave-square text-brown"></i></span>Wireless Sensing</li>
                 <li><span class="fa-li"><i class="fas fa-microchip text-brown"></i></span>Embedded System Development</li>
@@ -105,7 +133,7 @@
             </div>
 
             <div class="section-block">
-              <h2 class="mb-4" style="font-size: 2.2rem;">Education</h2>
+              <h2 class="mb-3" style="font-size: 2.2rem;">Education</h2>
               <div class="mb-4">
                 <h4 style="font-family: 'Georgia', serif; font-weight: bold; color: #A14D2E; font-size: 1.25rem;">Lund University</h4>
                 <div class="text-muted mb-1">M.Sc. in Wireless Communication</div>
