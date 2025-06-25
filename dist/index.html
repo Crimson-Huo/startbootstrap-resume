@@ -41,13 +41,14 @@
         margin-top: 1rem;
       }
       .section-block {
-        margin-top: 1.5rem;
+        margin-top: 1rem;
       }
       @media (min-width: 768px) {
         .research-education-container {
           display: flex;
           justify-content: space-between;
           gap: 2rem;
+          margin-top: 1rem;
         }
         .research-education-container > div {
           flex: 1;
@@ -56,6 +57,10 @@
       nav {
         background-color: #A14D2E;
         padding: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        border-radius: 0 0 15px 15px;
       }
       nav ul {
         list-style: none;
@@ -70,8 +75,25 @@
         font-family: 'Saira Extra Condensed', sans-serif;
         font-size: 1.1rem;
         color: #fff;
+        cursor: pointer;
+      }
+      nav ul li:hover {
+        text-decoration: underline;
       }
     </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll("nav ul li").forEach((item) => {
+          item.addEventListener("click", () => {
+            const id = item.textContent.trim().toLowerCase();
+            const target = document.getElementById(id);
+            if (target) {
+              target.scrollIntoView({ behavior: "smooth" });
+            }
+          });
+        });
+      });
+    </script>
   </head>
   <body id="page-top">
     <nav>
