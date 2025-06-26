@@ -25,48 +25,54 @@
     ul.fa-ul li .fa-li i {
       color: #A14D2E !important;
     }
-/* ===== Skills 星型布局（6 节点，全英文） ===== */
-#skills .star-container {
-  position: relative;
-  width: 350px;
-  height: 350px;
+/* ===== Skills 2×3 网格 + 星型列表 ===== */
+#skills .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 3rem;
   margin: 0 auto;
+  max-width: 800px;
 }
-#skills .star-container .skill-item {
-  position: absolute;
-  width: 120px;
+#skills .skill-card {
   text-align: center;
 }
-/* 褐色图标 & 标题 */
-#skills .skill-item i {
-  font-size: 2rem;
+#skills .skill-card i {
+  font-size: 2.5rem;
   color: #A14D2E;
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
 }
-#skills .skill-item h3 {
-  font-size: 1rem;
+#skills .skill-card h3 {
+  font-size: 1.25rem;
   color: #A14D2E;
-  margin: 0.3rem 0;
+  margin-bottom: .75rem;
 }
-/* 描述文字保持灰色 */
-#skills .skill-item p {
-  font-size: 0.85rem;
-  color: #555;
+/* 星型列表 */
+#skills .skill-card ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  line-height: 1.4;
 }
-/* 六节点星型分布 */
-#skills .embed    { top:  5%;  left: 50%; transform: translate(-50%, 0); }
-#skills .program  { top: 15%;  left: 90%; transform: translate(-50%, -50%); }
-#skills .wireless { top: 50%;  left: 90%; transform: translate(-50%, -50%); }
-#skills .design   { top: 85%;  left: 50%; transform: translate(-50%, -100%); }
-#skills .office   { top: 50%;  left: 10%; transform: translate(-50%, -50%); }
-#skills .sports   { top: 15%;  left: 10%; transform: translate(-50%, -50%); }
-/* 自我评估文字 */
+#skills .skill-card ul li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: .5em;
+  color: #555;
+}
+/* ⭐ 号作前置图标 */
+#skills .skill-card ul li::before {
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #A14D2E;
+}
+/* 自评文字 */
 #skills .self-assessment {
   text-align: center;
-  margin: 2.5rem auto 0;
-  max-width: 400px;
+  margin: 3rem auto 0;
+  max-width: 600px;
   font-style: italic;
   color: #333;
   line-height: 1.4;
@@ -228,37 +234,83 @@
   <div class="resume-section-content">
     <h2 class="mb-5">Skills</h2>
 
-    <div class="star-container">
-      <div class="skill-item embed">
+    <div class="grid-container">
+      <!-- 嵌入式系统 -->
+      <div class="skill-card">
         <i class="fas fa-microchip"></i>
         <h3>Embedded Systems</h3>
-        <p>STM32, ZYNQ, DSP, MSP430, 8051</p>
+        <ul>
+          <li>STM32</li>
+          <li>ZYNQ</li>
+          <li>DSP</li>
+          <li>MSP430</li>
+          <li>8051</li>
+        </ul>
       </div>
-      <div class="skill-item program">
+
+      <!-- 编程 -->
+      <div class="skill-card">
         <i class="fas fa-code"></i>
         <h3>Programming</h3>
-        <p>C, MATLAB, Python, Verilog</p>
+        <ul>
+          <li>C</li>
+          <li>MATLAB</li>
+          <li>Python</li>
+          <li>Verilog</li>
+        </ul>
       </div>
-      <div class="skill-item wireless">
+
+      <!-- 无线通信 -->
+      <div class="skill-card">
         <i class="fas fa-wifi"></i>
         <h3>Wireless Comms</h3>
-        <p>Wireless Sensing, Indoor Positioning, Base Station, Satellite, OFDM</p>
+        <ul>
+          <li>Wireless Sensing</li>
+          <li>Indoor Positioning</li>
+          <li>Base Station</li>
+          <li>Satellite</li>
+          <li>OFDM</li>
+        </ul>
       </div>
-      <div class="skill-item design">
+
+      <!-- 设计开发 -->
+      <div class="skill-card">
         <i class="fas fa-pencil-ruler"></i>
         <h3>Design Tools</h3>
-        <p>Vivado (Xilinx), IAR, Keil, CCS, Altium, CAD, Quartus</p>
+        <ul>
+          <li>Vivado (Xilinx)</li>
+          <li>IAR</li>
+          <li>Keil</li>
+          <li>CCS</li>
+          <li>Altium</li>
+          <li>CAD</li>
+          <li>Quartus</li>
+        </ul>
       </div>
-      <div class="skill-item office">
+
+      <!-- 办公软件 -->
+      <div class="skill-card">
         <i class="fas fa-file-alt"></i>
         <h3>Office Software</h3>
-        <p>Office, Origin, Overleaf, Visio</p>
+        <ul>
+          <li>Office</li>
+          <li>Origin</li>
+          <li>Overleaf</li>
+          <li>Visio</li>
+        </ul>
       </div>
-      <!-- Sports 放最后 -->
-      <div class="skill-item sports">
+
+      <!-- 运动 -->
+      <div class="skill-card">
         <i class="fas fa-running"></i>
         <h3>Sports</h3>
-        <p>Badminton, Table Tennis, Basketball, Cricket, Skiing</p>
+        <ul>
+          <li>Badminton</li>
+          <li>Table Tennis</li>
+          <li>Basketball</li>
+          <li>Cricket</li>
+          <li>Skiing</li>
+        </ul>
       </div>
     </div>
 
@@ -269,6 +321,7 @@
   </div>
 </section>
 <hr class="m-0" />
+
 
 
 
