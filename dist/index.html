@@ -25,6 +25,50 @@
     ul.fa-ul li .fa-li i {
       color: #A14D2E !important;
     }
+/* ====== Skills 星型布局 ====== */
+#skills .star-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+#skills .star-container .skill-item {
+  position: absolute;
+  width: 100px;
+  text-align: center;
+}
+#skills .skill-item i {
+  font-size: 2rem;
+  color: #A14D2E;
+  margin-bottom: 0.5rem;
+}
+#skills .skill-item h3 {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+}
+#skills .skill-item p {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.3;
+}
+
+/* 五节点星型定位 */
+#skills .radar  { top:   0%; left: 50%; transform: translateX(-50%); }
+#skills .simul  { top:  20%; right: 0%; transform: translateY(-50%); }
+#skills .code   { bottom:20%; right: 0%; transform: translateY(50%); }
+#skills .design { bottom:20%; left:  0%; transform: translateY(50%); }
+#skills .embed  { top:  20%; left:  0%; transform: translateY(-50%); }
+
+/* 自我评估文字 */
+#skills .self-assessment {
+  margin: 3rem auto 0;
+  max-width: 400px;
+  font-style: italic;
+  color: #333;
+  line-height: 1.4;
+}
+
+      
   </style>
 </head>
     <head>
@@ -177,45 +221,54 @@
 
       
              <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
-                </div>
-            </section>
+<!-- Skills（替换掉原有 <section id="skills">）-->
+<section class="resume-section" id="skills">
+  <div class="resume-section-content">
+    <!-- 保留原来的 h2 mb-5 -->
+    <h2 class="mb-5">Skills</h2>
+
+    <!-- 星型布局容器 -->
+    <div class="star-container">
+      <div class="skill-item radar">
+        <i class="fas fa-broadcast-tower"></i>
+        <h3>Radar</h3>
+        <p>Antenna · System Design · Algorithms</p>
+      </div>
+
+      <div class="skill-item simul">
+        <i class="fas fa-hourglass-half"></i>
+        <h3>Simulation</h3>
+        <p>HFSS · CST · ADS · AWR</p>
+      </div>
+
+      <div class="skill-item code">
+        <i class="fas fa-code"></i>
+        <h3>Programming</h3>
+        <p>Python · C · MATLAB · Verilog</p>
+      </div>
+
+      <div class="skill-item design">
+        <i class="fas fa-pencil-ruler"></i>
+        <h3>Design</h3>
+        <p>Altium · Cadence · PADS · SolidWorks</p>
+      </div>
+
+      <div class="skill-item embed">
+        <i class="fas fa-microchip"></i>
+        <h3>Embedded</h3>
+        <p>STM32 · Zynq · DSP · MSP430 · 8051</p>
+      </div>
+    </div>
+
+    <!-- 最后一行自我评估 -->
+    <p class="self-assessment">
+      Active, independent and able to work under a dynamic environment.  
+      Have coordination skills and teamwork spirit.
+    </p>
+  </div>
+</section>
+
+
             <hr class="m-0" />
             <!-- Experience-->
             <section class="resume-section" id="experience">
