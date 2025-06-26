@@ -563,7 +563,7 @@
 </section>
 <hr class="m-0" />
 
-        <!-- Projects-->
+<!-- Projects-->
 <section class="resume-section" id="projects">
   <div class="resume-section-content">
     <h2 class="mb-5">Projects</h2>
@@ -580,7 +580,7 @@
         <a class="nav-link" data-bs-toggle="pill" href="#pos">Positioning</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="pill" href="#chan">Channel Measurement</a>
+        <a class="nav-link" data-bs-toggle="pill" href="#chan">Channel Sounding</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" data-bs-toggle="pill" href="#sense">Wireless Sensing</a>
@@ -588,14 +588,18 @@
       <li class="nav-item">
         <a class="nav-link" data-bs-toggle="pill" href="#iot">Entrepreneurship (IoT)</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="pill" href="#other">Other Embedded Designs</a>
+      </li>
     </ul>
 
     <!-- 内容面板 -->
     <div class="tab-content">
-      <!-- 全部 -->
+
+      <!-- All -->
       <div id="all" class="tab-pane fade show active">
         <div class="row g-4">
-          <!-- 卡片示例：GNSS Onboard Receiver -->
+          <!-- GNSS Onboard Receiver -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <img src="assets/img/project-gnss.jpg" class="card-img-top" style="height:160px;object-fit:cover" alt="">
@@ -609,7 +613,8 @@
               </div>
             </div>
           </div>
-          <!-- 卡片示例：Indoor Positioning -->
+
+          <!-- Indoor Positioning -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <img src="assets/img/project-pos.jpg" class="card-img-top" style="height:160px;object-fit:cover" alt="">
@@ -623,14 +628,91 @@
               </div>
             </div>
           </div>
-          <!-- TODO: 其它项目卡片… -->
+
+          <!-- Base Station Positioning -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="assets/img/project-base.jpg" class="card-img-top" style="height:160px;object-fit:cover" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="detail-base.html" class="text-dark text-decoration-none">
+                    Base Station Positioning
+                  </a>
+                </h5>
+                <p class="card-text">High-precision macro cell localization system.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Channel Measurement -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="assets/img/project-chan.jpg" class="card-img-top" style="height:160px;object-fit:cover" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="detail-chan.html" class="text-dark text-decoration-none">
+                    Channel Measurement
+                  </a>
+                </h5>
+                <p class="card-text">MIMO channel sounding and analysis.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wireless Sensing -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="assets/img/project-sense.jpg" class="card-img-top" style="height:160px;object-fit:cover" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="detail-sense.html" class="text-dark text-decoration-none">
+                    Wireless Sensing
+                  </a>
+                </h5>
+                <p class="card-text">RF-based gesture & health monitoring.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Entrepreneurship (IoT) -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="assets/img/project-iot.jpg" class="card-img-top" style="height:160px;object-fit:cover" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="detail-iot.html" class="text-dark text-decoration-none">
+                    IoT “Luggage Guardian”
+                  </a>
+                </h5>
+                <p class="card-text">Gyro/RSSI/GPS‐based smart tracker.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Other Embedded Designs -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="assets/img/project-embedded.jpg" class="card-img-top" style="height:160px;object-fit:cover" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="detail-embedded.html" class="text-dark text-decoration-none">
+                    Other Embedded Designs
+                  </a>
+                </h5>
+                <ul class="card-text ps-3">
+                  <li>Environmental Control System</li>
+                  <li>Intelligent Line-Following Car</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- GNSS Onboard Receiver -->
+      <!-- GNSS Onboard RX -->
       <div id="gnss" class="tab-pane fade">
         <div class="row g-4">
-          <!-- 仅放 GNSS 相关 -->
+          <!-- 只展示 GNSS -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <img src="assets/img/project-gnss.jpg" class="card-img-top" style="height:160px;object-fit:cover" alt="">
@@ -650,6 +732,7 @@
       <!-- Positioning -->
       <div id="pos" class="tab-pane fade">
         <div class="row g-4">
+          <!-- Indoor -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <img src="assets/img/project-pos.jpg" class="card-img-top" style="height:160px;object-fit:cover" alt="">
@@ -663,10 +746,24 @@
               </div>
             </div>
           </div>
+          <!-- Base Station -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="assets/img/project-base.jpg" class="card-img-top" style="height:160px;object-fit:cover" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="detail-base.html" class="text-dark text-decoration-none">
+                    Base Station Positioning
+                  </a>
+                </h5>
+                <p class="card-text">High-precision macro cell localization system.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Channel Measurement -->
+      <!-- Channel Sounding -->
       <div id="chan" class="tab-pane fade">
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
@@ -675,7 +772,7 @@
               <div class="card-body">
                 <h5 class="card-title">
                   <a href="detail-chan.html" class="text-dark text-decoration-none">
-                    Channel Measurement
+                    Channel Sounding
                   </a>
                 </h5>
                 <p class="card-text">MIMO channel sounding and analysis.</p>
@@ -722,11 +819,46 @@
           </div>
         </div>
       </div>
-    </div>
 
+      <!-- Other Embedded Designs  -->
+      <div id="other" class="tab-pane fade">
+        <div class="row g-4">
+          <!-- 环境控制系统 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="assets/img/project-emb1.jpg" class="card-img-top" style="height:160px;object-fit:cover" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="detail-embedded.html#control" class="text-dark text-decoration-none">
+                    Environmental Control System
+                  </a>
+                </h5>
+                <p class="card-text">LoRa-NB-IoT based smart environment controller.</p>
+              </div>
+            </div>
+          </div>
+          <!-- 智能小车 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="assets/img/project-emb2.jpg" class="card-img-top" style="height:160px;object-fit:cover" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="detail-embedded.html#car" class="text-dark text-decoration-none">
+                    Intelligent Line-Following Car
+                  </a>
+                </h5>
+                <p class="card-text">MSP430-PWM climbing vehicle under time constraints.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 <hr class="m-0" />
+
 
         </div>
         <!-- Bootstrap core JS-->
