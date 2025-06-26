@@ -25,7 +25,7 @@
     ul.fa-ul li .fa-li i {
       color: #A14D2E !important;
     }
-/* ===== Skills 2×3 径向网格布局 ===== */
+/* ===== Skills Grid 布局 ===== */
 #skills .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -34,80 +34,102 @@
   margin: 0 auto;
 }
 
-/* 每个技能卡片 */
+/* 每个 卡片 box */
 #skills .skill-box {
   text-align: center;
 }
 
 /* 卡片标题 */
 #skills .skill-box .skill-title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: #A14D2E;
   margin-bottom: 1rem;
 }
 
-/* 径向容器 */
+/* ===== 径向六边形 ===== */
 #skills .radial-container {
   position: relative;
   width: 200px;
   height: 200px;
   margin: 0 auto;
-  --radius: 80px; /* 默认半径，可行内覆盖 */
+  --r-center: 40px;   /* 六边形边长 */
+  --r-child: 80px;    /* 连线长度 */
 }
 
-/* 中心节点 */
+/* 中心六边形 */
 #skills .radial-center {
   position: absolute;
   left: 50%; top: 50%;
+  width: var(--r-center); height: var(--r-center);
   transform: translate(-50%, -50%);
-  text-align: center;
-}
-#skills .radial-center i {
-  font-size: 2rem;
-  color: #A14D2E;
+  border: 2px solid #A14D2E;
+  clip-path: polygon(
+    25% 0%, 75% 0%,
+    100% 50%,
+    75% 100%, 25% 100%,
+    0% 50%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #skills .radial-center span {
-  display: block;
-  margin-top: 0.3rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #A14D2E;
   white-space: nowrap;
 }
 
-/* 子节点 */
+/* 子节点线+圆点+文字 */
 #skills .radial-item {
-  --angle: 0deg; /* 覆盖行内 */
+  --angle: 0deg;  /* inline override */
   position: absolute;
   left: 50%; top: 50%;
+  /* 先旋转到角度，再向外移动 radius，再反旋转保持文字水平 */
   transform:
     rotate(var(--angle))
-    translate(var(--radius))
+    translate(var(--r-child))
     rotate(calc(-1 * var(--angle)));
   transform-origin: center;
-  text-align: center;
 }
-/* 连线：画从中心出去的线 */
+/* 连线：在中心画出一条线 */
 #skills .radial-item::before {
   content: "";
   position: absolute;
   left: 50%; top: 50%;
-  width: 2px;
-  height: var(--radius);
+  width: 2px; height: var(--r-child);
   background: #A14D2E;
   transform-origin: top center;
   transform: rotate(var(--angle));
 }
-/* 子节点文字 */
+/* 圆点 */
+#skills .radial-item::after {
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 16px; height: 16px;
+  border: 2px solid #A14D2E;
+  border-radius: 50%;
+  transform:
+    rotate(var(--angle))
+    translate(var(--r-child))
+    rotate(calc(-1 * var(--angle)))
+    translate(-50%, -50%);
+}
+/* 标签文字 */
 #skills .radial-item span {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 0.85rem;
+  position: absolute;
+  left: 50%; top: 50%;
+  transform:
+    rotate(var(--angle))
+    translate(calc(var(--r-child) + 12px))
+    rotate(calc(-1 * var(--angle)));
+  transform-origin: center;
+  font-size: 0.75rem;
   color: #555;
   white-space: nowrap;
-  max-width: 100px;
 }
 
-/* Self-assessment */
+/* 最后一行自评 */
 #skills .self-assessment {
   text-align: center;
   margin: 2.5rem auto 0;
@@ -116,6 +138,7 @@
   color: #333;
   line-height: 1.4;
 }
+
 
 
   </style>
@@ -270,7 +293,6 @@
       <hr class="m-0" />
 
       
-<!-- ===== 完整 Skills 区块 ===== -->
 <section class="resume-section" id="skills">
   <div class="resume-section-content">
     <h2 class="mb-5">Skills</h2>
@@ -279,95 +301,84 @@
       <!-- 1. Embedded Systems -->
       <div class="skill-box">
         <div class="skill-title">Embedded Systems</div>
-        <div class="radial-container" style="--radius:80px;">
-          <div class="radial-center">
-            <i class="fas fa-microchip"></i>
-            <span>Embedded</span>
-          </div>
-          <div class="radial-item" style="--angle:0deg;"><span>STM32</span></div>
-          <div class="radial-item" style="--angle:72deg;"><span>ZYNQ</span></div>
-          <div class="radial-item" style="--angle:144deg;"><span>DSP</span></div>
-          <div class="radial-item" style="--angle:216deg;"><span>MSP430</span></div>
-          <div class="radial-item" style="--angle:288deg;"><span>8051</span></div>
+        <div class="radial-container" style="--r-child:80px;">
+          <div class="radial-center"><span>Embedded</span></div>
+          <div class="radial-item" style="--angle:   0deg;"><span>STM32</span></div>
+          <div class="radial-item" style="--angle:  60deg;"><span>ZYNQ</span></div>
+          <div class="radial-item" style="--angle: 120deg;"><span>DSP</span></div>
+          <div class="radial-item" style="--angle: 180deg;"><span>MSP430</span></div>
+          <div class="radial-item" style="--angle: 240deg;"><span>8051</span></div>
+          <div class="radial-item" style="--angle: 300deg;"><span>89C51</span></div>
         </div>
       </div>
 
       <!-- 2. Programming -->
       <div class="skill-box">
         <div class="skill-title">Programming</div>
-        <div class="radial-container" style="--radius:80px;">
-          <div class="radial-center">
-            <i class="fas fa-code"></i>
-            <span>Code</span>
-          </div>
-          <div class="radial-item" style="--angle:0deg;"><span>C</span></div>
-          <div class="radial-item" style="--angle:90deg;"><span>MATLAB</span></div>
-          <div class="radial-item" style="--angle:180deg;"><span>Python</span></div>
-          <div class="radial-item" style="--angle:270deg;"><span>Verilog</span></div>
+        <div class="radial-container" style="--r-child:80px;">
+          <div class="radial-center"><span>Code</span></div>
+          <div class="radial-item" style="--angle:   0deg;"><span>C</span></div>
+          <div class="radial-item" style="--angle:  72deg;"><span>MATLAB</span></div>
+          <div class="radial-item" style="--angle: 144deg;"><span>Python</span></div>
+          <div class="radial-item" style="--angle: 216deg;"><span>Verilog</span></div>
+          <div class="radial-item" style="--angle: 288deg;"><span>—</span></div>
+          <div class="radial-item" style="--angle: 360deg;"><span>—</span></div>
         </div>
       </div>
 
       <!-- 3. Wireless Comms -->
       <div class="skill-box">
         <div class="skill-title">Wireless Comms</div>
-        <div class="radial-container" style="--radius:80px;">
-          <div class="radial-center">
-            <i class="fas fa-wifi"></i>
-            <span>Wireless</span>
-          </div>
-          <div class="radial-item" style="--angle:0deg;"><span>Sensing</span></div>
-          <div class="radial-item" style="--angle:72deg;"><span>Indoor Pos</span></div>
-          <div class="radial-item" style="--angle:144deg;"><span>Base Station</span></div>
-          <div class="radial-item" style="--angle:216deg;"><span>Satellite</span></div>
-          <div class="radial-item" style="--angle:288deg;"><span>OFDM</span></div>
+        <div class="radial-container" style="--r-child:80px;">
+          <div class="radial-center"><span>Wireless</span></div>
+          <div class="radial-item" style="--angle:   0deg;"><span>Sensing</span></div>
+          <div class="radial-item" style="--angle:  60deg;"><span>Indoor Pos</span></div>
+          <div class="radial-item" style="--angle: 120deg;"><span>Base Station</span></div>
+          <div class="radial-item" style="--angle: 180deg;"><span>Satellite</span></div>
+          <div class="radial-item" style="--angle: 240deg;"><span>OFDM</span></div>
+          <div class="radial-item" style="--angle: 300deg;"><span>—</span></div>
         </div>
       </div>
 
       <!-- 4. Design Tools -->
       <div class="skill-box">
         <div class="skill-title">Design Tools</div>
-        <div class="radial-container" style="--radius:80px;">
-          <div class="radial-center">
-            <i class="fas fa-pencil-ruler"></i>
-            <span>Design</span>
-          </div>
-          <div class="radial-item" style="--angle:0deg;"><span>Vivado</span></div>
-          <div class="radial-item" style="--angle:60deg;"><span>IAR</span></div>
-          <div class="radial-item" style="--angle:120deg;"><span>Keil</span></div>
-          <div class="radial-item" style="--angle:180deg;"><span>CCS</span></div>
-          <div class="radial-item" style="--angle:240deg;"><span>Altium</span></div>
-          <div class="radial-item" style="--angle:300deg;"><span>Quartus</span></div>
+        <div class="radial-container" style="--r-child:80px;">
+          <div class="radial-center"><span>Design</span></div>
+          <div class="radial-item" style="--angle:   0deg;"><span>Vivado</span></div>
+          <div class="radial-item" style="--angle:  60deg;"><span>IAR</span></div>
+          <div class="radial-item" style="--angle: 120deg;"><span>Keil</span></div>
+          <div class="radial-item" style="--angle: 180deg;"><span>CCS</span></div>
+          <div class="radial-item" style="--angle: 240deg;"><span>Altium</span></div>
+          <div class="radial-item" style="--angle: 300deg;"><span>Quartus</span></div>
         </div>
       </div>
 
       <!-- 5. Office Software -->
       <div class="skill-box">
         <div class="skill-title">Office Software</div>
-        <div class="radial-container" style="--radius:80px;">
-          <div class="radial-center">
-            <i class="fas fa-file-alt"></i>
-            <span>Office</span>
-          </div>
-          <div class="radial-item" style="--angle:0deg;"><span>Office</span></div>
-          <div class="radial-item" style="--angle:90deg;"><span>Origin</span></div>
-          <div class="radial-item" style="--angle:180deg;"><span>Overleaf</span></div>
-          <div class="radial-item" style="--angle:270deg;"><span>Visio</span></div>
+        <div class="radial-container" style="--r-child:80px;">
+          <div class="radial-center"><span>Office</span></div>
+          <div class="radial-item" style="--angle:   0deg;"><span>Office</span></div>
+          <div class="radial-item" style="--angle:  72deg;"><span>Origin</span></div>
+          <div class="radial-item" style="--angle: 144deg;"><span>Overleaf</span></div>
+          <div class="radial-item" style="--angle: 216deg;"><span>Visio</span></div>
+          <div class="radial-item" style="--angle: 288deg;"><span>—</span></div>
+          <div class="radial-item" style="--angle: 360deg;"><span>—</span></div>
         </div>
       </div>
 
       <!-- 6. Sports -->
       <div class="skill-box">
         <div class="skill-title">Sports</div>
-        <div class="radial-container" style="--radius:80px;">
-          <div class="radial-center">
-            <i class="fas fa-running"></i>
-            <span>Sports</span>
-          </div>
-          <div class="radial-item" style="--angle:0deg;"><span>Badminton</span></div>
-          <div class="radial-item" style="--angle:72deg;"><span>Table Tennis</span></div>
-          <div class="radial-item" style="--angle:144deg;"><span>Basketball</span></div>
-          <div class="radial-item" style="--angle:216deg;"><span>Cricket</span></div>
-          <div class="radial-item" style="--angle:288deg;"><span>Skiing</span></div>
+        <div class="radial-container" style="--r-child:80px;">
+          <div class="radial-center"><span>Sports</span></div>
+          <div class="radial-item" style="--angle:   0deg;"><span>Badminton</span></div>
+          <div class="radial-item" style="--angle:  60deg;"><span>Table Tennis</span></div>
+          <div class="radial-item" style="--angle: 120deg;"><span>Basketball</span></div>
+          <div class="radial-item" style="--angle: 180deg;"><span>Cricket</span></div>
+          <div class="radial-item" style="--angle: 240deg;"><span>Skiing</span></div>
+          <div class="radial-item" style="--angle: 300deg;"><span>—</span></div>
         </div>
       </div>
     </div>
@@ -379,6 +390,7 @@
   </div>
 </section>
 <hr class="m-0" />
+
 
 
 
