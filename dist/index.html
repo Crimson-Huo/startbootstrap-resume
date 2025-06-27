@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chunguang Huo – CV</title>
+  <!-- Bootstrap / Font-Awesome links here… -->
+  <style>
+    /* 褐色文本 & 图标 */
+    .text-brown {
+      color: #A14D2E !important;
+    }
+    /* 强制 fa-ul 列表里的图标变棕色 */
+    .fa-ul .fa-li i {
+      color: #A14D2E !important;
+    }
+  </style>
+</head>
+    <head>
+  …
+  <!-- 在 Bootstrap、Font-Awesome 引入之后，自己的样式之前 -->
+  <style>
+    .text-brown {
+      color: #A14D2E !important;
+    }
+    ul.fa-ul li .fa-li i {
+      color: #A14D2E !important;
+    }
+/* ===== Skills Section Complete CSS ===== */
+
+/* 3×2 网格布局 */
+#skills .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* 单个技能卡片整体居中 */
+#skills .skill-card {
+  text-align: center;
+}
+
+/* 模块顶部图标 */
+#skills .skill-card i {
+  font-size: 2rem;
+  color: #555;
+  display: block;
+  margin: 0 auto 0.5rem;
+}
+
+/* 模块标题保持原有大小，应用棕色 */
+#skills .skill-card h3 {
+  font-size: 1.25rem;
+  color: #A14D2E;
+  margin-bottom: 0.75rem;
+}
+
+/* 列表：实心圆点，块级缩进，居中对齐 */
+#skills .skill-card ul {
+  list-style: disc inside;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: left;
+  color: #555;
+}
+
+/* 列表项底部间距 */
+#skills .skill-card ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* “自我评价” 小标题 */
+#skills .self-assessment-title {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #A14D2E;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* 自评文字（加粗） */
+#skills .self-assessment {
+  text-align: center;
+  margin: 0 auto 2rem;
+  max-width: 600px;
+  font-style: italic;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.4;
+    
+}
+
+  </style>
+</head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Resume – Chunguang Huo</title>
   <link rel="icon" href="assets/img/favicon.ico" />
-
   <!-- Font Awesome icons-->
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
   <!-- Google fonts-->
@@ -15,41 +109,46 @@
   <link href="css/styles.css" rel="stylesheet" />
 
   <style>
-    /* 全局棕色 */
+    /* Brown accent */
     .text-brown { color: #A14D2E !important; }
 
-    /* fa-ul 图标棕色 */
+    /* fa-ul icons brown */
     .fa-ul .fa-li i { color: #A14D2E !important; }
 
-    /* Resume section 间距 */
-    .resume-section { padding: 2rem 0; }
-    hr.m-0 { margin: 0; border: none; border-top: 1px solid #e5e5e5; }
+.resume-section {
+    padding: 2rem 0;
+  }
+  hr.m-0 {
+    margin: 0;
+    border: none;
+    border-top: 1px solid #e5e5e5;
+  }
 
-    /* ===== Papers 专属样式 ===== */
-    #papers h2 {
-      font-size: 2.5rem;
-      font-family: 'Saira Extra Condensed', sans-serif;
-      margin-bottom: 1.5rem;
-    }
-    #papers li a {
-      display: block;
-      font-size: 1.375rem;
-      font-weight: 600;
-      color: #222;
-      text-decoration: none;
-    }
-    #papers li a:hover {
-      text-decoration: underline;
-    }
-    #papers .journal {
-      font-size: 1rem;
-      color: #555;
-      margin-bottom: 0.25rem;
-    }
-    #papers .authors {
-      font-size: 1rem;
-      color: #777;
-    }
+  /* ==== Papers 专属 ==== */
+  #papers h2 {
+    font-size: 2.5rem;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    margin-bottom: 1.5rem;
+  }
+  #papers li a {
+    display: block;
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: #222;
+    text-decoration: none;
+  }
+  #papers li a:hover {
+    text-decoration: underline;
+  }
+  #papers .journal {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+  }
+  #papers .authors {
+    font-size: 1rem;
+    color: #777;
+  }
   </style>
 </head>
 <body id="page-top">
