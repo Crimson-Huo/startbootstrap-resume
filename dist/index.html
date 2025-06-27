@@ -125,11 +125,6 @@
   }
 
 /* ==== Papers 专属 ==== */
-#papers h2 { … }
-#papers li a { … }
-#papers .journal { … }
-#papers .authors { … }
-
   #papers h2 {
     font-size: 2rem;
     font-family: 'Saira Extra Condensed', sans-serif;
@@ -156,39 +151,9 @@
   }
   
   </style>
-
 </head>
 
-    <head>
- <!-- bootstrap、font-awesome 引入之后 -->
-  <style>
-/* ==== Papers 区块强制左上对齐，样式同 Projects ==== */
-
-/* 1. 恢复默认的内外边距——和其它 resume-section 一致 */
-#papers .resume-section-content {
-  margin: 0;            /* 取消任何自动居中 */
-  padding: 2rem 0;      /* 跟其它 section 相同的上下内边距 */
-  text-align: left;     /* 强制左对齐 */
-}
-
-/* 2. 让整个 Papers 区块充满容器宽度（跟 Projects 一样用 .container-fluid p-0）*/
-#papers {
-  width: 100%;
-}
-
-/* 3. 标题样式完全复制 Projects 的 h2 */
-#papers h2 {
-  font-size: 2.2rem;                     /* 跟 Projects 一样 */
-  font-family: 'Saira Extra Condensed', sans-serif;
-  font-weight: normal;                   /* 默认权重 */
-  margin-bottom: 1.5rem;                 /* 与 Projects 下边距一致 */
-  text-align: left !important;           /* 左对齐（防止被其它规则覆盖） */
-}
-
-
-  </style>
- 
-</head>
+  
 <body id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
@@ -872,6 +837,98 @@
   <hr class="m-0" />
 
   </div> <!-- /.container-fluid -->
+<!-- Experience-->
+<section class="resume-section" id="experience">
+  <div class="resume-section-content">
+    <h2 class="mb-5">Experience</h2>
+
+    <!-- Embedded Software Engineer -->
+    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+      <div class="flex-grow-1">
+        <h3 class="mb-0">Embedded Software Engineer</h3>
+        <div class="subheading mb-3">
+          Technology and Engineering Center for Space Utilization, Chinese Academy of Sciences
+        </div>
+        <div class="text-muted mb-2">
+          Address: No. 1, Nanertiao, Zhongguancun, Haidian District, Beijing, China
+        </div>
+        <ul class="mb-0">
+          <li>Developed, debugged, and maintained GNSS and visual multi-sensor navigation software;</li>
+          <li>Participated in design, development, and debugging of high-dynamic, high-sensitivity GNSS receiver software;</li>
+          <li>Improved existing software products and contributed to software engineering tasks;</li>
+          <li>Researched and debugged new navigation technologies and GNSS applications;</li>
+          <li>Built and integrated test systems for satellite navigation products;</li>
+          <li>Analyzed raw GNSS observation data and diagnosed issues;</li>
+          <li>Oversaw technical management of the project.</li>
+        </ul>
+      </div>
+      <div class="flex-shrink-0">
+        <span class="text-primary">Dec 13 2022 – Aug 08 2023</span>
+      </div>
+    </div>
+
+    <!-- Communications Engineer Intern -->
+    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+      <div class="flex-grow-1">
+        <h3 class="mb-0">Communications Engineer Intern</h3>
+        <div class="subheading mb-3">
+          Shenyang Zongguan Communication Engineering Co., Ltd.
+        </div>
+        <div class="text-muted mb-2">
+          Address: No. 18-12 Yaoyang Road, Shenbei New District, Shenyang, China
+        </div>
+        <ul class="mb-0">
+          <li>Maintained 5G base station equipment and network to ensure continuous operation;</li>
+          <li>Monitored and resolved equipment faults and alarms.</li>
+        </ul>
+      </div>
+      <div class="flex-shrink-0">
+        <span class="text-primary">Jun 20 2022 – Nov 19 2022</span>
+      </div>
+    </div>
+
+    <!-- Embedded Development Intern -->
+    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+      <div class="flex-grow-1">
+        <h3 class="mb-0">Embedded Development Intern</h3>
+        <div class="subheading mb-3">
+          Technology R&amp;D Department, Shanghai Mukai Intelligent Technology Co., Ltd.
+        </div>
+        <div class="text-muted mb-2">
+          Address: 1-14, No. 339 Jiuxin Road, Jiuting Town, Songjiang District, Shanghai, China
+        </div>
+        <ul class="mb-0">
+          <li>Developed external interfaces and control functions for an ARM-based identity recognition system.</li>
+        </ul>
+      </div>
+      <div class="flex-shrink-0">
+        <span class="text-primary">Feb 19 2022 – Mar 31 2022</span>
+      </div>
+    </div>
+
+    <!-- Embedded Systems Teaching Assistant -->
+<div class="d-flex flex-column flex-md-row justify-content-between">
+  <div class="flex-grow-1">
+    <h3 class="mb-0">Embedded Systems Teaching Assistant</h3>
+    <div class="subheading mb-3">Liaoning Technical University</div>
+    <div class="text-muted mb-2">
+      Address: No. 188, Longwan South Street, Xingcheng, Huludao City, Liaoning Province, China
+    </div>
+    <ul class="mb-0">
+      <li>Explained embedded system design concepts to two classes of undergraduates;</li>
+      <li>Guided students in STM32 and 8051 microcontroller programming;</li>
+      <li>Oversaw and validated project deliverables and assessments.</li>
+    </ul>
+  </div>
+  <div class="flex-shrink-0">
+    <span class="text-primary">Oct 2019 – Jan 2020</span>
+  </div>
+</div>
+
+
+  </div>
+</section>
+<hr class="m-0" />
 
 
         <!-- Bootstrap core JS-->
