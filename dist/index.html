@@ -90,58 +90,55 @@
   font-weight: bold;
   color: #333;
   line-height: 1.4;
-/* Papers section 标题、期刊、作者样式 */
-#papers .resume-section-content h2 {
-  font-size: 2.5rem;              /* 论文区标题最大 */
-  font-family: 'Saira Extra Condensed', sans-serif;
-  margin-bottom: 1rem;
-}
-#papers .resume-section-content .fa-ul .fa-li i {
-  font-size: 1.5rem;             /* 图标稍大 */
-}
-#papers .resume-section-content li a {
-  font-size: 1.5rem;             /* 论文标题 */
-  color: #222;
-  text-decoration: none;
-}
-#papers .resume-section-content li a:hover {
-  text-decoration: underline;
-}
-#papers .resume-section-content li small.journal {
-  display: block;
-  font-size: 1.25rem;            /* 期刊次大 */
-  color: #555;
-  margin-top: 0.25rem;
-}
-#papers .resume-section-content li small.authors {
-  display: block;
-  font-size: 1.375rem;           /* 作者第二大 */
-  color: #666;
-  margin-top: 0.25rem;
-}
-
-
     
 }
 
   </style>
 </head>
-    
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Resume - Chunguang Huo</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume – Chunguang Huo</title>
+  <link rel="icon" href="assets/img/favicon.ico" />
+  <!-- Font Awesome icons-->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+
+  <style>
+    /* Brown accent */
+    .text-brown { color: #A14D2E !important; }
+
+    /* fa-ul icons brown */
+    .fa-ul .fa-li i { color: #A14D2E !important; }
+
+    /* Adjust Papers section fonts */
+    #papers .resume-section-content h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+    }
+    #papers .fa-ul .fa-li { width: 2em; }
+    #papers li a {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #222;
+      text-decoration: none;
+    }
+    #papers li a:hover { text-decoration: underline; }
+    #papers .text-muted.journal {
+      margin-left: 2.1rem;
+      font-size: 1rem;
+      margin-top: 0.25rem;
+    }
+    #papers .text-muted.authors {
+      margin-left: 2.1rem;
+      font-size: 1rem;
+    }
+  </style>
+</head>
 <body id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
@@ -988,36 +985,28 @@
 </section>
 <hr class="m-0" />
 
-<!-- Papers -->
-<section class="resume-section" id="papers">
-  <div class="resume-section-content">
-    <!-- Section 标题 -->
-    <h2 class="mb-5">Papers</h2>
-    <!-- 使用 fa-ul 列表，保持和其它列表一致的风格 -->
-    <ul class="fa-ul mb-0">
-      <li>
-        <!-- 文件图标 -->
-        <span class="fa-li"><i class="fas fa-file-alt"></i></span>
-        <!-- 论文标题 -->
-        <a href="papers/detail-paper-3.html" class="text-dark text-decoration-none">
-          <strong style="font-size:1.25rem;">
-            Design of a Radio Frequency–Based Eye Movement Recognition System  
-            Utilizing Medium Reflectivity
-          </strong>
-        </a>
-        <!-- 期刊名称 -->
-        <div class="text-muted" style="margin-left:2.1rem; font-size:1rem; margin-top:0.25rem;">
-          Chinese Journal of Sensors and Actuators
-        </div>
-        <!-- 作者名单 -->
-        <div class="text-muted" style="margin-left:2.1rem; font-size:1rem;">
-          LIU Ying; WANG Yikai; HUO Chunguang; WANG Zhelun
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
-<hr class="m-0" />
+   <!-- Papers -->
+    <section class="resume-section" id="papers">
+      <div class="resume-section-content">
+        <h2>Papers</h2>
+        <ul class="fa-ul mb-0">
+          <li>
+            <span class="fa-li"><i class="fas fa-file-alt"></i></span>
+            <a href="papers/detail-paper-3.html">
+              Design of a Radio Frequency–Based Eye Movement Recognition System  
+              Utilizing Medium Reflectivity
+            </a>
+            <div class="text-muted journal">
+              Chinese Journal of Sensors and Actuators
+            </div>
+            <div class="text-muted authors">
+              LIU Ying; WANG Yikai; HUO Chunguang; WANG Zhelun
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr class="m-0" />
 
 
         </div>
