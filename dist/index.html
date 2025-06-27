@@ -59,15 +59,6 @@
       line-height: 1.4;
     }
 
-/* 全局：各 section 左对齐 */
-    .resume-section .resume-section-content {
-      margin: 0;
-      padding: 2rem 0;
-      text-align: left;
-    }
-    .resume-section h2 {
-      text-align: left !important;
-    }
     /* Papers 专属 */
     #papers li a {
       display: block;
@@ -76,19 +67,24 @@
       color: #222;
       text-decoration: none;
     }
-
-    #papers li a:hover { text-decoration: underline; }
-    #papers .journal { font-size: 1rem; color: #555; margin-bottom: .25rem; }
-    #papers .authors { color: #777; }
-
-/* ==== Papers 专属（去掉标题样式）==== */
-
-/* 棕色图标 */
+      /* 棕色图标 */
 #papers .fa-li.text-brown i {
   color: #A14D2E !important;
 }
+    #papers li a:hover { text-decoration: underline; }
+    #papers .journal { font-size: 1rem; color: #555; margin-bottom: .25rem; }
+    #papers .authors { font-size: 1rem; color: #777; }
 
-/* 论文标题链接 */
+    /* 全局：各 section 左对齐 */
+    .resume-section .resume-section-content {
+      margin: 0;
+      padding: 2rem 0;
+      text-align: left;
+    }
+    .resume-section h2 {
+      text-align: left !important;
+    }
+      /* 论文标题链接 */
 #papers .paper-link {
   display: block;
   font-size: 1.375rem;
@@ -116,10 +112,74 @@
   margin-top: 0.25rem;
   font-size: 1rem;
 }
+  </style>
+</head>
+    
+<body id="page-top">
+  <!-- 侧边导航 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Chunguang Huo</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+             src="assets/img/profile.jpg" alt="Profile" />
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Research Interests</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Honors & Awards</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#papers">Papers</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <!-- 页首 / Hero -->
+  <header class="bg-white hero" style="padding-top:4.5rem; text-align:center;">
+    <img src="assets/img/profile.jpg" alt="Profile"
+         class="img-fluid rounded-circle mb-3"
+         style="width:160px;height:160px;object-fit:cover;" />
+    <h1 class="fw-bold mb-3"
+        style="font-size:3rem;font-family:'Saira Extra Condensed',sans-serif;">
+      CHUNGUANG <span class="text-brown">HUO</span>
+    </h1>
+    <div class="text-muted mt-2">
+      <i class="fas fa-map-marker-alt me-2"></i>Lund, Sweden
+    </div>
+    <div class="mb-3">
+      <i class="fas fa-envelope me-2 text-muted"></i>
+      <a href="mailto:huochunguang2021@163.com"
+         class="text-brown" style="text-decoration:none;">
+        huochunguang2021@163.com
+      </a>
+    </div>
+    <div class="d-flex justify-content-center gap-3 contact-icons">
+      <a class="btn btn-dark btn-social" href="https://www.linkedin.com/in/chunguang-huo-32070829b" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a class="btn btn-dark btn-social" href="https://github.com/Crimson-Huo" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a class="btn btn-dark btn-social" href="https://www.facebook.com/profile.php?id=61550115766390" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </div>
+  </header>
 
+  <!-- 主要内容容器 -->
+  <div class="container-fluid p-0">
+    <!-- 这里开始放你的各个 <section id="about">…<section id="papers"> -->
 
-}
 
   </style>
 </head>
