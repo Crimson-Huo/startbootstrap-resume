@@ -67,40 +67,49 @@
       color: #222;
       text-decoration: none;
     }
-/* Papers 专属样式 */
-#papers h2 {
-  font-size: 2.5rem;
-  font-family: 'Saira Extra Condensed', sans-serif;
-  margin-bottom: 1.5rem;
-}
-
-/* 棕色图标 */
-#papers .fa-ul .fa-li.text-brown i {
-  color: #A14D2E !important;
-}
+/* ==== Papers 专属 ==== */
 
     #papers li a:hover { text-decoration: underline; }
     #papers .journal { font-size: 1rem; color: #555; margin-bottom: .25rem; }
     #papers .authors { font-size: 1rem; color: #777; }
 
-    
-/* 期刊：黑色斜体 */
+/* 棕色图标 */
+#papers .fa-li.text-brown i {
+  color: #A14D2E !important;
+}
+
+/* 论文标题链接 */
+#papers .paper-link {
+  display: block;
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: #222;
+  text-decoration: none;
+}
+#papers .paper-link:hover {
+  text-decoration: underline;
+}
+
+/* 期刊：黑色斜体，左缩进与标题对齐 */
 #papers .journal {
   color: #222 !important;
   font-style: italic !important;
-  display: block;
-  margin-left: 2.1rem;  /* 与 icon 对齐 */
-  font-size: 1rem;
+  margin-left: 2.4rem; /* 根据 icon + spacing 调整 */
   margin-top: 0.25rem;
+  font-size: 1rem;
 }
 
-/* 作者：灰色 */
+/* 作者：灰色，与期刊左对齐 */
 #papers .authors {
   color: #777;
-  display: block;
-  margin-left: 2.1rem;  /* 与 icon 对齐 */
+  margin-left: 2.4rem;
+  margin-top: 0.25rem;
   font-size: 1rem;
 }
+
+
+    
+
     /* 全局：各 section 左对齐 */
     .resume-section .resume-section-content {
       margin: 0;
