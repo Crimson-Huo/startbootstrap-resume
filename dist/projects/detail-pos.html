@@ -15,7 +15,7 @@
   <!-- Global Styles -->
   <link href="../css/styles.css" rel="stylesheet" />
   <style>
-    /* Local overrides */
+    /* Local overrides for project detail */
     .project-header {
       padding-top: 4.5rem;
       text-align: center;
@@ -29,7 +29,7 @@
       margin: 1rem auto;
     }
     .project-title {
-      font-size: 2.5rem;
+      font-size: 2rem; /* 缩小主标题 */
       font-family: 'Saira Extra Condensed', sans-serif;
       margin-bottom: 0.5rem;
       text-align: center;
@@ -48,9 +48,9 @@
     }
     .project-content h2 {
       margin-top: 2rem;
-    }
-    .project-content ol {
-      margin-left: 1.25rem;
+      font-size: 1.5rem;  /* 缩小二级标题 */
+      font-weight: 600;
+      color: #333;
     }
     .project-content ul {
       margin-left: 1.25rem;
@@ -67,7 +67,7 @@
     }
     .related-links {
       max-width: 800px;
-      margin: 2rem auto 4rem;
+      margin: 2rem auto;
     }
     .related-links ul {
       padding-left: 1rem;
@@ -118,47 +118,32 @@
   <!-- Project Header -->
   <header class="project-header">
     <h1 class="project-title">Passive Indoor Positioning–Based Smart Classroom Lighting System</h1>
-    <div class="project-date">March 10, 2024</div>
+    <div class="project-date">March 5, 2024</div>
     <img
-      src="../assets/img/detail-pos.jpg"
-      alt="Smart Classroom Lighting System overview"
+      src="../assets/img/project-pos.jpg"
+      alt="Passive Indoor Positioning Smart Classroom Lighting System overview"
     />
   </header>
 
   <!-- Project Content -->
   <section class="project-content">
-    <p>
-      This provincial-level startup project addresses inefficient “all-on” classroom lighting when occupancy is low or absent. Because PIR sensors only detect significant thermal changes and miss low-amplitude movement, we developed two solutions:
-    </p>
+    <p>This provincial-level startup project addresses inefficient “all-on” teaching-room lighting when occupancy is low or absent. Because PIR sensors only detect significant thermal changes and miss low-amplitude movement, we developed two solutions:</p>
 
     <h2>1. RSSI-Based Indoor Positioning</h2>
     <ul>
-      <li>
-        Use WiFi Received Signal Strength Indication (RSSI) variations and a BP neural network to model signal fluctuation patterns when people enter the room, inferring their presence and location;
-      </li>
-      <li>
-        Once occupants are located, send wireless control commands via the WiFi module to a microcontroller, which drives the lighting fixtures for targeted, energy-saving illumination.
-      </li>
+      <li>Use WiFi Received Signal Strength Indication (RSSI) variations and a BP neural network to model signal fluctuation patterns when people enter the room, inferring their presence and location;</li>
+      <li>Once occupants are located, send wireless control commands via the WiFi module to a microcontroller, which drives the lighting fixtures for targeted, energy-saving illumination.</li>
     </ul>
 
     <h2>2. Hardware-Only Infrared + Light Sensing</h2>
     <ul>
-      <li>
-        Deploy two spaced infrared transmitter–receiver pairs to count entrants and exits, and use a photoresistor to measure ambient light;
-      </li>
-      <li>
-        Combine headcount and light‐level data to decide which lights to switch on, and use a real-time clock chip to enforce lighting schedules without manual checks;
-      </li>
-      <li>
-        Include classroom temperature monitoring and upload occupancy and temperature data to the cloud for students to find available, comfortable study spaces and for teachers to track attendance.
-      </li>
+      <li>Deploy two spaced infrared transmitter–receiver pairs to count entrants and exits, and use a photoresistor to measure ambient light;</li>
+      <li>Combine headcount and light-level data to decide which lights to switch on, and use a real-time clock chip to enforce lighting schedules without manual checks;</li>
+      <li>Include classroom temperature monitoring and upload occupancy and temperature data to the cloud for students to find available, comfortable study spaces and for teachers to track attendance.</li>
     </ul>
 
-    <p>
-      <strong>My role:</strong> I led solution design and evaluation, developed the core detection algorithms, designed the hardware circuits, implemented the embedded software, and performed system simulations to validate performance.
-    </p>
+    <p>On this project, I led solution design and evaluation, developed the core detection algorithms, designed the hardware circuits, implemented the embedded software, and performed system simulations to validate performance.</p>
 
-    <!-- Contact Icons -->
     <div class="contact-icons">
       <a href="mailto:huochunguang2021@163.com"><i class="fas fa-envelope"></i></a>
       <a
@@ -168,11 +153,11 @@
       ><i class="fab fa-linkedin-in"></i></a>
     </div>
   </section>
-  <hr />
+  <hr class="m-0" />
 
   <!-- Related Links -->
   <section class="related-links">
-    <h4>Related</h4>
+    <h4>Related Papers</h4>
     <ul>
       <li>
         <a href="../papers/detail-paper-1.html">
