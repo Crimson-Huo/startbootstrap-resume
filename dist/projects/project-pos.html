@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Passive Indoor Positioning–Based Smart Classroom Lighting System</title>
+  <link rel="icon" href="../assets/img/favicon.ico" />
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Global Styles -->
+  <link href="../css/styles.css" rel="stylesheet" />
+  <style>
+    /* Local overrides */
+    .project-header {
+      padding-top: 4.5rem;
+      text-align: center;
+    }
+    .project-header img {
+      max-width: 800px;
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      display: block;
+      margin: 1rem auto;
+    }
+    .project-title {
+      font-size: 2.5rem;
+      font-family: 'Saira Extra Condensed', sans-serif;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+    .project-date {
+      text-align: center;
+      color: #888;
+      margin-bottom: 1.5rem;
+    }
+    .project-content {
+      max-width: 800px;
+      margin: 2rem auto;
+      line-height: 1.6;
+      font-size: 1rem;
+      color: #444;
+    }
+    .project-content h2 {
+      margin-top: 2rem;
+    }
+    .project-content ol {
+      margin-left: 1.25rem;
+    }
+    .project-content ul {
+      margin-left: 1.25rem;
+      list-style: disc;
+    }
+    .contact-icons {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .contact-icons a {
+      font-size: 1.5rem;
+      margin: 0 .5rem;
+      color: #333;
+    }
+    .related-links {
+      max-width: 800px;
+      margin: 2rem auto 4rem;
+    }
+    .related-links ul {
+      padding-left: 1rem;
+    }
+    .related-links a {
+      color: #A14D2E;
+      text-decoration: none;
+    }
+    .related-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body id="page-top">
+  <!-- Navigation (same as main) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="../index.html#page-top">
+      <span class="d-block d-lg-none">Chunguang Huo</span>
+      <span class="d-none d-lg-block">
+        <img
+          class="img-fluid img-profile rounded-circle mx-auto mb-2"
+          src="../assets/img/profile.jpg"
+          alt="Profile"
+        />
+      </span>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarResponsive"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#interests">Research Interests</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#awards">Honors & Awards</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Project Header -->
+  <header class="project-header">
+    <h1 class="project-title">Passive Indoor Positioning–Based Smart Classroom Lighting System</h1>
+    <div class="project-date">March 10, 2024</div>
+    <img
+      src="../assets/img/detail-pos.jpg"
+      alt="Smart Classroom Lighting System overview"
+    />
+  </header>
+
+  <!-- Project Content -->
+  <section class="project-content">
+    <p>
+      This provincial-level startup project addresses inefficient “all-on” classroom lighting when occupancy is low or absent. Because PIR sensors only detect significant thermal changes and miss low-amplitude movement, we developed two solutions:
+    </p>
+
+    <h2>1. RSSI-Based Indoor Positioning</h2>
+    <ul>
+      <li>
+        Use WiFi Received Signal Strength Indication (RSSI) variations and a BP neural network to model signal fluctuation patterns when people enter the room, inferring their presence and location;
+      </li>
+      <li>
+        Once occupants are located, send wireless control commands via the WiFi module to a microcontroller, which drives the lighting fixtures for targeted, energy-saving illumination.
+      </li>
+    </ul>
+
+    <h2>2. Hardware-Only Infrared + Light Sensing</h2>
+    <ul>
+      <li>
+        Deploy two spaced infrared transmitter–receiver pairs to count entrants and exits, and use a photoresistor to measure ambient light;
+      </li>
+      <li>
+        Combine headcount and light‐level data to decide which lights to switch on, and use a real-time clock chip to enforce lighting schedules without manual checks;
+      </li>
+      <li>
+        Include classroom temperature monitoring and upload occupancy and temperature data to the cloud for students to find available, comfortable study spaces and for teachers to track attendance.
+      </li>
+    </ul>
+
+    <p>
+      <strong>My role:</strong> I led solution design and evaluation, developed the core detection algorithms, designed the hardware circuits, implemented the embedded software, and performed system simulations to validate performance.
+    </p>
+
+    <!-- Contact Icons -->
+    <div class="contact-icons">
+      <a href="mailto:huochunguang2021@163.com"><i class="fas fa-envelope"></i></a>
+      <a
+        href="https://www.linkedin.com/in/chunguang-huo-32070829b"
+        target="_blank"
+        rel="noopener"
+      ><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </section>
+  <hr />
+
+  <!-- Related Links -->
+  <section class="related-links">
+    <h4>Related</h4>
+    <ul>
+      <li>
+        <a href="../papers/detail-paper-1.html">
+          Visualized Classroom Energy Saving Lighting System Based on Passive Detection
+        </a>
+      </li>
+      <li>
+        <a href="../papers/detail-paper-2.html">
+          The Research of Intelligent Illumination for Classroom Based on Passive Localization
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Bootstrap JS & Core Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/scripts.js"></script>
+</body>
+</html>
