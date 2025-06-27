@@ -115,27 +115,32 @@
     /* fa-ul icons brown */
     .fa-ul .fa-li i { color: #A14D2E !important; }
 
-    /* Adjust Papers section fonts */
-    #papers .resume-section-content h2 {
+   /* Papers 部分 */
+    #papers h2 {
       font-size: 2.2rem;
       margin-bottom: 1.5rem;
+      font-weight: 700;
     }
-    #papers .fa-ul .fa-li { width: 2em; }
+    #papers .fa-li { width: 2em; }
     #papers li a {
       font-size: 1.25rem;
-      font-weight: 500;
+      font-weight: 600;
       color: #222;
       text-decoration: none;
     }
-    #papers li a:hover { text-decoration: underline; }
-    #papers .text-muted.journal {
+    #papers li a:hover {
+      text-decoration: underline;
+    }
+    #papers .journal {
       margin-left: 2.1rem;
       font-size: 1rem;
+      color: #555;
       margin-top: 0.25rem;
     }
-    #papers .text-muted.authors {
+    #papers .authors {
       margin-left: 2.1rem;
       font-size: 1rem;
+      color: #666;
     }
   </style>
 </head>
@@ -593,400 +598,225 @@
 </section>
 <hr class="m-0" />
 
-<!-- Projects-->
-<section class="resume-section" id="projects">
-  <div class="resume-section-content">
-    <h2 class="mb-5">Projects</h2>
+<div class="container-fluid p-0">
 
-    <!-- 分类导航 -->
-    <ul class="nav nav-pills mb-4" id="projects-tabs">
-      <li class="nav-item">
-        <a class="nav-link active" data-bs-toggle="pill" href="#all">All</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="pill" href="#gnss">GNSS Satellite-borne Receiver</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="pill" href="#pos">Positioning</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="pill" href="#chan">Channel Sounding</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="pill" href="#sense">Wireless Sensing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="pill" href="#iot">Entrepreneurship (IoT)</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="pill" href="#other">Other Embedded Designs</a>
-      </li>
-    </ul>
+  <!-- Projects -->
+  <section class="resume-section" id="projects">
+    <div class="resume-section-content">
+      <h2 class="mb-5">Projects</h2>
 
-    <!-- 内容面板 -->
-    <div class="tab-content">
+      <!-- 分类导航 -->
+      <ul class="nav nav-pills mb-4" id="projects-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" data-bs-toggle="pill" href="#all">All</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#gnss">GNSS Satellite-borne Receiver</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#pos">Positioning</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#chan">Channel Sounding</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#sense">Wireless Sensing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#iot">Entrepreneurship (IoT)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#other">Other Embedded Designs</a>
+        </li>
+      </ul>
 
-      <!-- All -->
-      <div id="all" class="tab-pane fade show active">
-        <div class="row g-4">
+      <!-- 内容面板 -->
+      <div class="tab-content">
 
-          <!-- DRO_B Satellite / SMILE Satellite -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-              <img src="assets/img/project-dro.jpg"
-                   class="card-img-top"
-                   style="height:160px;object-fit:cover"
-                   alt="DRO_B Satellite / SMILE Satellite">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="projects/detail-gnss-dro.html" class="text-dark text-decoration-none">
-                    DRO_B Satellite / SMILE Satellite
-                  </a>
-                </h5>
-                <p class="card-text">
-                  A high-cost, highly interference-resistant, high-sensitivity, multi-band, multifunction GNSS onboard receiver.
-                </p>
+        <!-- All Pane -->
+        <div id="all" class="tab-pane fade show active">
+          <div class="row g-4">
+            <!-- DRO_B Satellite / SMILE Satellite -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img src="assets/img/project-dro.jpg"
+                     class="card-img-top"
+                     style="height:160px;object-fit:cover"
+                     alt="DRO_B Satellite / SMILE Satellite">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="projects/detail-gnss-dro.html"
+                       class="text-dark text-decoration-none">
+                      DRO_B Satellite / SMILE Satellite
+                    </a>
+                  </h5>
+                  <p class="card-text">
+                    A high-cost, highly interference-resistant, high-sensitivity,
+                    multi-band, multifunction GNSS onboard receiver.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Quad-band XRS / YangWang Satellite Receiver -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-              <img src="assets/img/project-xrs.jpg"
-                   class="card-img-top"
-                   style="height:160px;object-fit:cover"
-                   alt="Quad-band XRS / YangWang Satellite Receiver">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="projects/detail-gnss-xrs.html" class="text-dark text-decoration-none">
-                    Quad-band XRS / YangWang Satellite Receiver
-                  </a>
-                </h5>
-                <p class="card-text">
-                 A high-dynamic, high-sensitivity satellite receiver designed for commercial aerospace onboard applications.
-                </p>
+            <!-- Quad-band XRS / YangWang Satellite Receiver -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img src="assets/img/project-xrs.jpg"
+                     class="card-img-top"
+                     style="height:160px;object-fit:cover"
+                     alt="Quad-band XRS / YangWang Satellite Receiver">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="projects/detail-gnss-xrs.html"
+                       class="text-dark text-decoration-none">
+                      Quad-band XRS / YangWang Satellite Receiver
+                    </a>
+                  </h5>
+                  <p class="card-text">
+                    A high-dynamic, high-sensitivity satellite receiver designed
+                    for commercial aerospace onboard applications.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-      <!-- Passive Indoor Positioning–Based Smart Classroom Lighting System -->
-<div class="col-md-6 col-lg-4">
-  <div class="card h-100">
-    <img src="assets/img/project-pos.jpg"
-         class="card-img-top"
-         style="height:160px;object-fit:cover"
-         alt="Passive Indoor Positioning Smart Classroom Lighting System">
-    <div class="card-body">
-      <h5 class="card-title">
-        <a href="projects/detail-pos.html" class="text-dark text-decoration-none">
-          Passive Indoor Positioning–Based Smart Classroom Lighting System
-        </a>
-      </h5>
-      <p class="card-text">
-        An intelligent classroom lighting system designed using passive indoor positioning, which can greatly reduce resource waste.
-      </p>
-    </div>
-  </div>
-</div>
-<!-- Base Station Positioning -->
-<div class="col-md-6 col-lg-4">
-  <div class="card h-100">
-    <img src="assets/img/project-base.jpg"
-         class="card-img-top"
-         style="height:160px;object-fit:cover"
-         alt="Base Station Positioning">
-    <div class="card-body">
-      <h5 class="card-title">
-        <a href="projects/detail-base.html" class="text-dark text-decoration-none">
-          Base Station Positioning
-        </a>
-      </h5>
-      <p class="card-text">
-        A least-squares positioning system utilizing cooperative measurements from multiple base stations.
-      </p>
-    </div>
-  </div>
-</div>
-
-          <!-- Channel Sounding -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-              <img src="assets/img/project-chan.jpg"
-                   class="card-img-top"
-                   style="height:160px;object-fit:cover"
-                   alt="Channel Sounding">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="projects/detail-chan.html" class="text-dark text-decoration-none">
-                    Channel Sounding
-                  </a>
-                </h5>
-                <p class="card-text">MIMO channel sounding and analysis.</p>
+            <!-- Passive Indoor Positioning–Based Smart Classroom Lighting System -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img src="assets/img/project-pos.jpg"
+                     class="card-img-top"
+                     style="height:160px;object-fit:cover"
+                     alt="Passive Indoor Positioning Smart Classroom Lighting System">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="projects/detail-pos.html"
+                       class="text-dark text-decoration-none">
+                      Passive Indoor Positioning–Based Smart Classroom Lighting System
+                    </a>
+                  </h5>
+                  <p class="card-text">
+                    An intelligent classroom lighting system designed using
+                    passive indoor positioning, which can greatly reduce resource waste.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-<!-- Energy-Aware Millimeter-Wave Radar Eye Movement Monitoring Design -->
-<div class="col-md-6 col-lg-4">
-  <div class="card h-100">
-    <img src="assets/img/project-eye.jpg"
-         class="card-img-top"
-         style="height:160px;object-fit:cover"
-         alt="Energy-Aware Millimeter-Wave Radar Eye Movement Monitoring Design">
-    <div class="card-body">
-      <h5 class="card-title">
-        <a href="projects/detail-eye.html" class="text-dark text-decoration-none">
-          Energy-Aware Millimeter-Wave Radar Eye Movement Monitoring Design
-        </a>
-      </h5>
-      <p class="card-text">
-        A non-contact system using energy-aware and micro-Doppler fusion algorithms to detect blinks and eye closures, achieving 93.2% average recognition accuracy and just 0.0487 blinks/sec frequency error, for high interference resilience and real-time monitoring.
-      </p>
-    </div>
-  </div>
-</div>
-
-          <!-- Entrepreneurship (IoT) -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-              <img src="assets/img/project-iot.jpg"
-                   class="card-img-top"
-                   style="height:160px;object-fit:cover"
-                   alt="Luggage Guardian">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="projects/detail-iot.html" class="text-dark text-decoration-none">
-                    IoT “Luggage Guardian”
-                  </a>
-                </h5>
-                <p class="card-text">Gyro/RSSI/GPS-based smart tracker.</p>
+            <!-- Base Station Positioning -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img src="assets/img/project-base.jpg"
+                     class="card-img-top"
+                     style="height:160px;object-fit:cover"
+                     alt="Base Station Positioning">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="projects/detail-base.html"
+                       class="text-dark text-decoration-none">
+                      Base Station Positioning
+                    </a>
+                  </h5>
+                  <p class="card-text">
+                    A least-squares positioning system utilizing cooperative
+                    measurements from multiple base stations.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Other Embedded Designs -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-              <img src="assets/img/project-embedded.jpg"
-                   class="card-img-top"
-                   style="height:160px;object-fit:cover"
-                   alt="Env Control & Line-Following Car">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="projects/detail-embedded.html" class="text-dark text-decoration-none">
-                    Other Embedded Designs
-                  </a>
-                </h5>
-                <ul class="card-text ps-3 mb-0">
-                  <li>Environmental Control System</li>
-                  <li>Intelligent Line-Following Car</li>
-                </ul>
+            <!-- Channel Sounding -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img src="assets/img/project-chan.jpg"
+                     class="card-img-top"
+                     style="height:160px;object-fit:cover"
+                     alt="Channel Sounding">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="projects/detail-chan.html"
+                       class="text-dark text-decoration-none">
+                      Channel Sounding
+                    </a>
+                  </h5>
+                  <p class="card-text">MIMO channel sounding and analysis.</p>
+                </div>
               </div>
             </div>
-          </div>
 
-        </div>
-      </div>
-
-      <!-- GNSS Receiver Pane -->
-      <div id="gnss" class="tab-pane fade">
-        <div class="row g-4">
-          <!-- DRO_B Satellite / SMILE Satellite -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-              <img src="assets/img/project-dro.jpg"
-                   class="card-img-top"
-                   style="height:160px;object-fit:cover"
-                   alt="DRO_B Satellite / SMILE Satellite">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="projects/detail-gnss-dro.html" class="text-dark text-decoration-none">
-                    DRO_B Satellite / SMILE Satellite
-                  </a>
-                </h5>
-                <p class="card-text">
-                 A high-cost, highly interference-resistant, high-sensitivity, multi-band, multifunction GNSS onboard receiver.
-                </p>
+            <!-- Energy-Aware Millimeter-Wave Radar Eye Movement Monitoring Design -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img src="assets/img/project-eye.jpg"
+                     class="card-img-top"
+                     style="height:160px;object-fit:cover"
+                     alt="Energy-Aware Millimeter-Wave Radar Eye Movement Monitoring Design">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="projects/detail-eye.html"
+                       class="text-dark text-decoration-none">
+                      Energy-Aware Millimeter-Wave Radar Eye Movement Monitoring Design
+                    </a>
+                  </h5>
+                  <p class="card-text">
+                    A non-contact system using energy-aware & micro-Doppler
+                    fusion algorithms to detect blinks and eye closures, achieving
+                    93.2% average recognition accuracy and only 0.0487 blinks/sec error.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Quad-band XRS / YangWang Satellite Receiver -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-              <img src="assets/img/project-xrs.jpg"
-                   class="card-img-top"
-                   style="height:160px;object-fit:cover"
-                   alt="Quad-band XRS / YangWang Satellite Receiver">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="projects/detail-gnss-xrs.html" class="text-dark text-decoration-none">
-                    Quad-band XRS / YangWang Satellite Receiver
-                  </a>
-                </h5>
-                <p class="card-text">
-                  A high-dynamic, high-sensitivity satellite receiver designed for commercial aerospace onboard applications.
-                </p>
+            <!-- Entrepreneurship (IoT) -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img src="assets/img/project-iot.jpg"
+                     class="card-img-top"
+                     style="height:160px;object-fit:cover"
+                     alt="IoT Luggage Guardian">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="projects/detail-iot.html"
+                       class="text-dark text-decoration-none">
+                      IoT “Luggage Guardian”
+                    </a>
+                  </h5>
+                  <p class="card-text">Gyro/RSSI/GPS-based smart tracker.</p>
+                </div>
               </div>
             </div>
+
+            <!-- Other Embedded Designs -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img src="assets/img/project-embedded.jpg"
+                     class="card-img-top"
+                     style="height:160px;object-fit:cover"
+                     alt="Other Embedded Designs">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="projects/detail-embedded.html"
+                       class="text-dark text-decoration-none">
+                      Other Embedded Designs
+                    </a>
+                  </h5>
+                  <ul class="card-text ps-3 mb-0">
+                    <li>Environmental Control System</li>
+                    <li>Intelligent Line-Following Car</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
+    </section>
+    <hr class="m-0" />
 
-      <!-- Positioning Pane -->
-      <div id="pos" class="tab-pane fade">
-        <div class="row g-4">
-          <!-- Indoor Positioning -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-              <img src="assets/img/project-pos.jpg"
-                   class="card-img-top"
-                   style="height:160px;object-fit:cover"
-                   alt="Indoor Positioning">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="projects/detail-pos.html" class="text-dark text-decoration-none">
-                    Indoor Positioning
-                  </a>
-                </h5>
-                <p class="card-text">Machine-learning aided UWB localization.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Base Station Positioning -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-              <img src="assets/img/project-base.jpg"
-                   class="card-img-top"
-                   style="height:160px;object-fit:cover"
-                   alt="Base Station Positioning">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="projects/detail-base.html" class="text-dark text-decoration-none">
-                    Base Station Positioning
-                  </a>
-                </h5>
-                <p class="card-text">High-precision macro cell localization system.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Channel Sounding Pane -->
-      <div id="chan" class="tab-pane fade">
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-              <img src="assets/img/project-chan.jpg"
-                   class="card-img-top"
-                   style="height:160px;object-fit:cover"
-                   alt="Channel Sounding">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="projects/detail-chan.html" class="text-dark text-decoration-none">
-                    Channel Sounding
-                  </a>
-                </h5>
-                <p class="card-text">MIMO channel sounding and analysis.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Wireless Sensing Pane -->
-      <div id="sense" class="tab-pane fade">
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-              <img src="assets/img/project-sense.jpg"
-                   class="card-img-top"
-                   style="height:160px;object-fit:cover"
-                   alt="Wireless Sensing">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="projects/detail-sense.html" class="text-dark text-decoration-none">
-                    Wireless Sensing
-                  </a>
-                </h5>
-                <p class="card-text">RF-based gesture & health monitoring.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Entrepreneurship (IoT) Pane -->
-      <div id="iot" class="tab-pane fade">
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-              <img src="assets/img/project-iot.jpg"
-                   class="card-img-top"
-                   style="height:160px;object-fit:cover"
-                   alt="Luggage Guardian">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="projects/detail-iot.html" class="text-dark text-decoration-none">
-                    IoT “Luggage Guardian”
-                  </a>
-                </h5>
-                <p class="card-text">Gyro/RSSI/GPS-based smart tracker.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Other Embedded Designs Pane -->
-      <div id="other" class="tab-pane fade">
-        <div class="row g-4">
-          <!-- Environmental Control System -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-              <img src="assets/img/project-emb1.jpg"
-                   class="card-img-top"
-                   style="height:160px;object-fit:cover"
-                   alt="Environmental Control System">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="projects/detail-embedded.html#control" class="text-dark text-decoration-none">
-                    Environmental Control System
-                  </a>
-                </h5>
-                <p class="card-text">LoRa-NB-IoT based smart environment controller.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Intelligent Line-Following Car -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-              <img src="assets/img/project-emb2.jpg" 
-                   class="card-img-top" 
-                   style="height:160px;object-fit:cover" 
-                   alt="Intelligent Line-Following Car">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="projects/detail-embedded.html#car" class="text-dark text-decoration-none">
-                    Intelligent Line-Following Car
-                  </a>
-                </h5>
-                <p class="card-text">MSP430-PWM climbing vehicle under time constraints.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-</section>
-<hr class="m-0" />
-
-   <!-- Papers -->
+    <!-- Papers -->
     <section class="resume-section" id="papers">
       <div class="resume-section-content">
-        <h2>Papers</h2>
+        <h2 class="mb-5">Papers</h2>
         <ul class="fa-ul mb-0">
           <li>
             <span class="fa-li"><i class="fas fa-file-alt"></i></span>
@@ -994,10 +824,10 @@
               Design of a Radio Frequency–Based Eye Movement Recognition System  
               Utilizing Medium Reflectivity
             </a>
-            <div class="text-muted journal">
+            <div class="journal">
               Chinese Journal of Sensors and Actuators
             </div>
-            <div class="text-muted authors">
+            <div class="authors">
               LIU Ying; WANG Yikai; HUO Chunguang; WANG Zhelun
             </div>
           </li>
@@ -1006,8 +836,8 @@
     </section>
     <hr class="m-0" />
 
+</div> <!-- 只在这里闭合 container-fluid p-0 -->
 
-        </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
