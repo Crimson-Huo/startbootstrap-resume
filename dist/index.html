@@ -59,61 +59,66 @@
       line-height: 1.4;
     }
 
-  /* ===== 全局 Section 样式，确保都是左对齐 ===== */
-.resume-section-content {
-  /* 2rem 上下留白，左右不留白 */
-  padding: 2rem 0;
-  margin: 0;
-  text-align: left;
-}
-.resume-section-content .section-title {
-  font-size: 2.5rem;
-  font-family: 'Saira Extra Condensed', sans-serif;
-  margin-bottom: 1.5rem;
-  /* 已经是 left 对齐 */
-}
+/* 全局：各 section 左对齐 */
+    .resume-section .resume-section-content {
+      margin: 0;
+      padding: 2rem 0;
+      text-align: left;
+    }
+    .resume-section h2 {
+      text-align: left !important;
+    }
+    /* Papers 专属 */
+    #papers li a {
+      display: block;
+      font-size: 1.375rem;
+      font-weight: 600;
+      color: #222;
+      text-decoration: none;
+    }
 
-/* ===== Papers 专属样式 ===== */
-.paper-list {
-  /* 利用 fa-ul 自带的 left padding 作为基准缩进 */
-  padding-left: 2em;
-  margin-bottom: 0;
-}
+    #papers li a:hover { text-decoration: underline; }
+    #papers .journal { font-size: 1rem; color: #555; margin-bottom: .25rem; }
+    #papers .authors { color: #777; }
+
+/* ==== Papers 专属（去掉标题样式）==== */
 
 /* 棕色图标 */
-.paper-list .fa-li i {
-  color: #A14D2E;
+#papers .fa-li.text-brown i {
+  color: #A14D2E !important;
 }
 
-/* 论文标题 */
-.paper-title {
+/* 论文标题链接 */
+#papers .paper-link {
   display: block;
-  margin-left: 0;           /* 紧贴图标文字顶端对齐 */
   font-size: 1.375rem;
   font-weight: 600;
   color: #222;
   text-decoration: none;
 }
-.paper-title:hover {
+#papers .paper-link:hover {
   text-decoration: underline;
 }
 
-/* 期刊：黑色斜体，与标题同一缩进 */
-.paper-list .journal {
-  margin-left: 0;           /* 同标题缩进 */
+/* 期刊：黑色斜体，左缩进与标题对齐 */
+#papers .journal {
+  color: #222 !important;
+  font-style: italic !important;
+  margin-left: 2.4rem;
   margin-top: 0.25rem;
   font-size: 1rem;
-  font-style: italic;
-  color: #222;
 }
 
-/* 作者：灰色常规体，与期刊左对齐 */
-.paper-list .authors {
-  margin-left: 0;           /* 同标题缩进 */
+/* 作者：灰色，与期刊左对齐 */
+#papers .authors {
+  color: #777;
+  margin-left: 2.4rem;
   margin-top: 0.25rem;
   font-size: 1rem;
-  font-style: normal;
-  color: #777;
+}
+
+
+
 }
 
   </style>
