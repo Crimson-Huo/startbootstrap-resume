@@ -147,6 +147,24 @@
   }
   
   </style>
+    <!-- ====== 自定义覆盖样式: 全局左对齐所有版块 ====== -->
+  <style>
+    /* 让每个 resume-section 恢复默认的上下内边距，取消水平自动居中，并左对齐文字 */
+    .resume-section .resume-section-content {
+      margin: 0;         /* 取消 auto-margin */
+      padding: 2rem 0;   /* 与其它 section 保持一致的上下间距 */
+      text-align: left;  /* 强制左对齐内容 */
+    }
+
+    /* 强制所有 section 的 <h2> 标题左对齐 */
+    .resume-section h2 {
+      text-align: left !important;
+      /* 如果需要，也可以在这里重新声明字体和间距 */
+      /* font-size: 2.2rem; */
+      /* font-family: 'Saira Extra Condensed', sans-serif; */
+      /* margin-bottom: 1.5rem; */
+    }
+  </style>
 </head>
 
   
