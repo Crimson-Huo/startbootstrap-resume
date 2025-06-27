@@ -67,28 +67,38 @@
       color: #222;
       text-decoration: none;
     }
-      /* 强制 fa-ul 里的 li icon 为棕色 */
+/* Papers 专属样式 */
+#papers h2 {
+  font-size: 2.5rem;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+/* 棕色图标 */
 #papers .fa-ul .fa-li.text-brown i {
   color: #A14D2E !important;
+}
+
     #papers li a:hover { text-decoration: underline; }
     #papers .journal { font-size: 1rem; color: #555; margin-bottom: .25rem; }
     #papers .authors { font-size: 1rem; color: #777; }
 
     
-/* 期刊名称：黑色斜体 */
-#papers .journal em {
-  color: #222;
-  font-style: italic;
+/* 期刊：黑色斜体 */
+#papers .journal {
+  color: #222 !important;
+  font-style: italic !important;
   display: block;
-  margin-left: 2.1rem;  /* 与原 icon 对齐 */
+  margin-left: 2.1rem;  /* 与 icon 对齐 */
   font-size: 1rem;
+  margin-top: 0.25rem;
 }
-    
-/* 作者列表：灰色正常体 */
+
+/* 作者：灰色 */
 #papers .authors {
   color: #777;
   display: block;
-  margin-left: 2.1rem;  /* 与原 icon 对齐 */
+  margin-left: 2.1rem;  /* 与 icon 对齐 */
   font-size: 1rem;
 }
     /* 全局：各 section 左对齐 */
