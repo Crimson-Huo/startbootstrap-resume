@@ -1,105 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-  <meta charset="UTF-8">
-  <title>Chunguang Huo – CV</title>
-  <!-- Bootstrap / Font-Awesome links here… -->
-  <style>
-    /* 褐色文本 & 图标 */
-    .text-brown {
-      color: #A14D2E !important;
-    }
-    /* 强制 fa-ul 列表里的图标变棕色 */
-    .fa-ul .fa-li i {
-      color: #A14D2E !important;
-    }
-  </style>
-</head>
-    <head>
-  …
-  <!-- 在 Bootstrap、Font-Awesome 引入之后，自己的样式之前 -->
-  <style>
-    .text-brown {
-      color: #A14D2E !important;
-    }
-    ul.fa-ul li .fa-li i {
-      color: #A14D2E !important;
-    }
-/* ===== Skills Section Complete CSS ===== */
-
-/* 3×2 网格布局 */
-#skills .grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem 3rem;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-/* 单个技能卡片整体居中 */
-#skills .skill-card {
-  text-align: center;
-}
-
-/* 模块顶部图标 */
-#skills .skill-card i {
-  font-size: 2rem;
-  color: #555;
-  display: block;
-  margin: 0 auto 0.5rem;
-}
-
-/* 模块标题保持原有大小，应用棕色 */
-#skills .skill-card h3 {
-  font-size: 1.25rem;
-  color: #A14D2E;
-  margin-bottom: 0.75rem;
-}
-
-/* 列表：实心圆点，块级缩进，居中对齐 */
-#skills .skill-card ul {
-  list-style: disc inside;
-  padding: 0;
-  margin: 0 auto;
-  display: inline-block;
-  text-align: left;
-  color: #555;
-}
-
-/* 列表项底部间距 */
-#skills .skill-card ul li {
-  margin-bottom: 0.5rem;
-}
-
-/* “自我评价” 小标题 */
-#skills .self-assessment-title {
-  text-align: center;
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #A14D2E;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-
-/* 自评文字（加粗） */
-#skills .self-assessment {
-  text-align: center;
-  margin: 0 auto 2rem;
-  max-width: 600px;
-  font-style: italic;
-  font-weight: bold;
-  color: #333;
-  line-height: 1.4;
-    
-}
-
-  </style>
-</head>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Resume – Chunguang Huo</title>
+  <title>Chunguang Huo – CV</title>
   <link rel="icon" href="assets/img/favicon.ico" />
+
   <!-- Font Awesome icons-->
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
   <!-- Google fonts-->
@@ -108,74 +14,82 @@
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/styles.css" rel="stylesheet" />
 
+  <!-- 自定义样式 -->
   <style>
-    /* Brown accent */
+    /* 褐色文本 & 图标 */
     .text-brown { color: #A14D2E !important; }
-
-    /* fa-ul icons brown */
     .fa-ul .fa-li i { color: #A14D2E !important; }
 
-.resume-section {
-    padding: 2rem 0;
-  }
-  hr.m-0 {
-    margin: 0;
-    border: none;
-    border-top: 1px solid #e5e5e5;
-  }
-
-/* ==== Papers 专属 ==== */
-
-  #papers li a {
-    display: block;
-    font-size: 1.375rem;
-    font-weight: 600;
-    color: #222;
-    text-decoration: none;
-  }
-  #papers li a:hover {
-    text-decoration: underline;
-  }
-  #papers .journal {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 0.25rem;
-  }
-  #papers .authors {
-    font-size: 1rem;
-    color: #777;
-  }
-  
-  </style>
-    <!-- ====== 自定义覆盖样式: 全局左对齐所有版块 ====== -->
-  <style>
-    /* 让每个 resume-section 恢复默认的上下内边距，取消水平自动居中，并左对齐文字 */
-    .resume-section .resume-section-content {
-      margin: 0;         /* 取消 auto-margin */
-      padding: 2rem 0;   /* 与其它 section 保持一致的上下间距 */
-      text-align: left;  /* 强制左对齐内容 */
+    /* Skills 栅格布局 */
+    #skills .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem 3rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    #skills .skill-card { text-align: center; }
+    #skills .skill-card i { display: block; margin: 0 auto .5rem; font-size: 2rem; color: #555; }
+    #skills .skill-card h3 { font-size: 1.25rem; color: #A14D2E; margin-bottom: .75rem; }
+    #skills .skill-card ul {
+      list-style: disc inside;
+      margin: 0 auto;
+      padding: 0;
+      text-align: left;
+      display: inline-block;
+      color: #555;
+    }
+    #skills .skill-card ul li { margin-bottom: .5rem; }
+    #skills .self-assessment-title,
+    #skills .self-assessment {
+      text-align: center;
+    }
+    #skills .self-assessment-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #A14D2E;
+      margin: 3rem 0 1rem;
+    }
+    #skills .self-assessment {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      font-style: italic;
+      font-weight: bold;
+      color: #333;
+      line-height: 1.4;
     }
 
-    /* 强制所有 section 的 <h2> 标题左对齐 */
+    /* Papers 专属 */
+    #papers li a {
+      display: block;
+      font-size: 1.375rem;
+      font-weight: 600;
+      color: #222;
+      text-decoration: none;
+    }
+    #papers li a:hover { text-decoration: underline; }
+    #papers .journal { font-size: 1rem; color: #555; margin-bottom: .25rem; }
+    #papers .authors { font-size: 1rem; color: #777; }
+
+    /* 全局：各 section 左对齐 */
+    .resume-section .resume-section-content {
+      margin: 0;
+      padding: 2rem 0;
+      text-align: left;
+    }
     .resume-section h2 {
       text-align: left !important;
-      /* 如果需要，也可以在这里重新声明字体和间距 */
-      /* font-size: 2.2rem; */
-      /* font-family: 'Saira Extra Condensed', sans-serif; */
-      /* margin-bottom: 1.5rem; */
     }
   </style>
 </head>
-
-  
 <body id="page-top">
-  <!-- Navigation-->
+  <!-- 侧边导航 -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Chunguang Huo</span>
       <span class="d-none d-lg-block">
         <img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-             src="assets/img/profile.jpg" alt="..." />
+             src="assets/img/profile.jpg" alt="Profile" />
       </span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -197,7 +111,7 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- 页首 / Hero -->
   <header class="bg-white hero" style="padding-top:4.5rem; text-align:center;">
     <img src="assets/img/profile.jpg" alt="Profile"
          class="img-fluid rounded-circle mb-3"
@@ -212,7 +126,7 @@
     <div class="mb-3">
       <i class="fas fa-envelope me-2 text-muted"></i>
       <a href="mailto:huochunguang2021@163.com"
-         class="text-brown" style="text-decoration: none;">
+         class="text-brown" style="text-decoration:none;">
         huochunguang2021@163.com
       </a>
     </div>
@@ -229,7 +143,10 @@
     </div>
   </header>
 
+  <!-- 主要内容容器 -->
   <div class="container-fluid p-0">
+    <!-- 这里开始放你的各个 <section id="about">…<section id="papers"> -->
+
 
       
     <!-- About / Biography -->
