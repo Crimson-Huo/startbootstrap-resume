@@ -580,7 +580,7 @@
   <div class="resume-section-content">
     <h2 class="mb-5">Projects</h2>
 
-    <!-- 分类导航 -->
+    <!-- Tabs Navigation -->
     <ul class="nav nav-pills mb-4" id="projects-tabs">
       <li class="nav-item">
         <a class="nav-link active" data-bs-toggle="pill" href="#all">All</a>
@@ -590,9 +590,6 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" data-bs-toggle="pill" href="#error">Error-Correction Research</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="pill" href="#pos">Positioning</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" data-bs-toggle="pill" href="#rf">Channel-Driven RF Sensing and Localization</a>
@@ -608,20 +605,20 @@
       </li>
     </ul>
 
-    <!-- 内容面板 -->
+    <!-- Tabs Content -->
     <div class="tab-content">
 
       <!-- All Pane -->
       <div id="all" class="tab-pane fade show active">
         <div class="row g-4">
 
-          <!-- GNSS DRO_B -->
+          <!-- DRO_B Satellite / SMILE Satellite -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <img src="assets/img/project-dro.jpg"
                    class="card-img-top"
                    style="height:160px;object-fit:cover;"
-                   alt="DRO_B Satellite">
+                   alt="DRO_B Satellite / SMILE Satellite">
               <div class="card-body">
                 <h5 class="card-title">
                   <a href="projects/detail-gnss-dro.html" class="text-dark text-decoration-none">
@@ -635,13 +632,13 @@
             </div>
           </div>
 
-          <!-- GNSS XRS -->
+          <!-- Quad-band XRS / YangWang Satellite Receiver -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <img src="assets/img/project-xrs.jpg"
                    class="card-img-top"
                    style="height:160px;object-fit:cover;"
-                   alt="XRS Receiver">
+                   alt="Quad-band XRS / YangWang Satellite Receiver">
               <div class="card-body">
                 <h5 class="card-title">
                   <a href="projects/detail-gnss-xrs.html" class="text-dark text-decoration-none">
@@ -655,13 +652,13 @@
             </div>
           </div>
 
-          <!-- Error-Correction Research -->
+          <!-- Blockwise Classification Error-Correction Research -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <img src="assets/img/project-code.jpg"
                    class="card-img-top"
                    style="height:160px;object-fit:cover;"
-                   alt="Blockwise Classification Error-Correction">
+                   alt="Error-Correction Research">
               <div class="card-body">
                 <h5 class="card-title">
                   <a href="projects/detail-code.html" class="text-dark text-decoration-none">
@@ -675,7 +672,7 @@
             </div>
           </div>
 
-          <!-- Positioning Lighting -->
+          <!-- Indoor Positioning–Driven Smart Classroom Lighting -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <img src="assets/img/project-pos.jpg"
@@ -689,27 +686,47 @@
                   </a>
                 </h5>
                 <p class="card-text">
-                  The smart classroom lighting system uses two independent methods—passive positioning and occupancy counting—to adjust lighting in real time and save energy.
+                  The system uses passive positioning and occupancy counting to adjust lighting in real time and save energy.
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- RF Sensing & Localization -->
+          <!-- ES-Eyes: Radar Eye-Movement Monitoring -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
-              <img src="assets/img/project-rf.jpg"
+              <img src="assets/img/project-eye.jpg"
                    class="card-img-top"
                    style="height:160px;object-fit:cover;"
-                   alt="RF Sensing & Localization">
+                   alt="ES-Eyes">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="projects/detail-rf.html" class="text-dark text-decoration-none">
-                    Channel-Driven RF Sensing and Localization
+                  <a href="projects/detail-eye.html" class="text-dark text-decoration-none">
+                    ES-Eyes: Millimeter-Wave Radar Eye-Movement Monitoring
                   </a>
                 </h5>
                 <p class="card-text">
-                  Combines channel sounding data with RSSI and angle-of-arrival algorithms to localize devices and environment features.
+                  Non-contact micro-Doppler fusion detects blinks with 93.2% accuracy and 0.0487 blinks/sec error.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Channel Sounding -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="assets/img/project-chan.jpg"
+                   class="card-img-top"
+                   style="height:160px;object-fit:cover;"
+                   alt="Channel Sounding">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="projects/detail-chan.html" class="text-dark text-decoration-none">
+                    Channel Sounding
+                  </a>
+                </h5>
+                <p class="card-text">
+                  MIMO channel sounding and analysis.
                 </p>
               </div>
             </div>
@@ -729,13 +746,13 @@
                   </a>
                 </h5>
                 <p class="card-text">
-                  Custom protocol packets; audio framed into OFDM symbols with QAM modulation, channel estimation and equalization, ensuring reliable transmission in noisy environments.
+                  Custom protocol packets; audio framed into OFDM symbols with QAM, channel estimation & equalization for reliable noisy-environment transmission.
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- IoT Luggage Guardian -->
+          <!-- IoT “Luggage Guardian” -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <img src="assets/img/project-iot.jpg"
@@ -755,7 +772,7 @@
             </div>
           </div>
 
-          <!-- Other Algorithms & Embedded -->
+          <!-- Other Algorithms & Embedded Designs -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <img src="assets/img/project-embedded.jpg"
@@ -777,19 +794,15 @@
           </div>
 
         </div>
-      </div>
-      <!-- /All Pane -->
+      </div><!-- /.tab-pane #all -->
 
       <!-- GNSS Receiver Pane -->
       <div id="gnss" class="tab-pane fade">
         <div class="row g-4">
-          <!-- DRO_B -->
+          <!-- DRO_B Satellite -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
-              <img src="assets/img/project-dro.jpg"
-                   class="card-img-top"
-                   style="height:160px;object-fit:cover;"
-                   alt="DRO_B">
+              <img src="assets/img/project-dro.jpg" class="card-img-top" style="height:160px;object-fit:cover;" alt="DRO_B">
               <div class="card-body">
                 <h5 class="card-title">
                   <a href="projects/detail-gnss-dro.html" class="text-dark text-decoration-none">
@@ -797,18 +810,15 @@
                   </a>
                 </h5>
                 <p class="card-text">
-                  A high-cost, high-interference-resistant, high-sensitivity receiver.
+                  A high-cost, high-interference-resistant GNSS receiver.
                 </p>
               </div>
             </div>
           </div>
-          <!-- XRS -->
+          <!-- XRS Receiver -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
-              <img src="assets/img/project-xrs.jpg"
-                   class="card-img-top"
-                   style="height:160px;object-fit:cover;"
-                   alt="XRS">
+              <img src="assets/img/project-xrs.jpg" class="card-img-top" style="height:160px;object-fit:cover;" alt="XRS">
               <div class="card-body">
                 <h5 class="card-title">
                   <a href="projects/detail-gnss-xrs.html" class="text-dark text-decoration-none">
@@ -816,24 +826,20 @@
                   </a>
                 </h5>
                 <p class="card-text">
-                  High-dynamic, high-sensitivity GNSS receiver.
+                  High-dynamic, high-sensitivity onboard receiver.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- /GNSS -->
+      </div><!-- /.tab-pane #gnss -->
 
       <!-- Error-Correction Research Pane -->
       <div id="error" class="tab-pane fade">
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
-              <img src="assets/img/project-code.jpg"
-                   class="card-img-top"
-                   style="height:160px;object-fit:cover;"
-                   alt="Error-Correction Research">
+              <img src="assets/img/project-code.jpg" class="card-img-top" style="height:160px;object-fit:cover;" alt="Error-Correction">
               <div class="card-body">
                 <h5 class="card-title">
                   <a href="projects/detail-code.html" class="text-dark text-decoration-none">
@@ -847,18 +853,15 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- /Error -->
+      </div><!-- /.tab-pane #error -->
 
-      <!-- Positioning Pane -->
-      <div id="pos" class="tab-pane fade">
+      <!-- Channel-Driven RF Sensing and Localization Pane -->
+      <div id="rf" class="tab-pane fade">
         <div class="row g-4">
+          <!-- Indoor Positioning Lighting -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
-              <img src="assets/img/project-pos.jpg"
-                   class="card-img-top"
-                   style="height:160px;object-fit:cover;"
-                   alt="Classroom Lighting">
+              <img src="assets/img/project-pos.jpg" class="card-img-top" style="height:160px;object-fit:cover;" alt="Indoor Positioning Lighting">
               <div class="card-body">
                 <h5 class="card-title">
                   <a href="projects/detail-pos.html" class="text-dark text-decoration-none">
@@ -866,49 +869,52 @@
                   </a>
                 </h5>
                 <p class="card-text">
-                  Uses passive positioning & occupancy counting to adjust lighting in real time.
+                  The system uses passive positioning and occupancy counting to adjust lighting in real time and save energy.
                 </p>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- /Positioning -->
-
-      <!-- RF Sensing & Localization Pane -->
-      <div id="rf" class="tab-pane fade">
-        <div class="row g-4">
+          <!-- ES-Eyes -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
-              <img src="assets/img/project-rf.jpg"
-                   class="card-img-top"
-                   style="height:160px;object-fit:cover;"
-                   alt="RF Sensing & Localization">
+              <img src="assets/img/project-eye.jpg" class="card-img-top" style="height:160px;object-fit:cover;" alt="ES-Eyes">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="projects/detail-rf.html" class="text-dark text-decoration-none">
-                    Channel-Driven RF Sensing and Localization
+                  <a href="projects/detail-eye.html" class="text-dark text-decoration-none">
+                    ES-Eyes: Millimeter-Wave Radar Eye-Movement Monitoring
                   </a>
                 </h5>
                 <p class="card-text">
-                  Combines channel sounding data with RSSI and AoA to localize devices.
+                  Non-contact micro-Doppler fusion detects blinks with 93.2% accuracy.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Channel Sounding -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="assets/img/project-chan.jpg" class="card-img-top" style="height:160px;object-fit:cover;" alt="Channel Sounding">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="projects/detail-chan.html" class="text-dark text-decoration-none">
+                    Channel Sounding
+                  </a>
+                </h5>
+                <p class="card-text">
+                  MIMO channel sounding and analysis.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- /RF -->
+      </div><!-- /.tab-pane #rf -->
 
       <!-- OFDM Pane -->
       <div id="ofdm" class="tab-pane fade">
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
-              <img src="assets/img/project-ofdm.jpg"
-                   class="card-img-top"
-                   style="height:160px;object-fit:cover;"
-                   alt="OFDM Audio Signals">
+              <img src="assets/img/project-ofdm.jpg" class="card-img-top" style="height:160px;object-fit:cover;" alt="OFDM">
               <div class="card-body">
                 <h5 class="card-title">
                   <a href="projects/detail-ofdm.html" class="text-dark text-decoration-none">
@@ -916,24 +922,20 @@
                   </a>
                 </h5>
                 <p class="card-text">
-                  Custom OFDM audio link with QAM, channel estimation & equalization.
+                  Custom protocol packets; audio framed into OFDM symbols with QAM, channel estimation & equalization.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- /OFDM -->
+      </div><!-- /.tab-pane #ofdm -->
 
-      <!-- Entrepreneurship Pane -->
+      <!-- Entrepreneurship (IoT) Pane -->
       <div id="iot" class="tab-pane fade">
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
-              <img src="assets/img/project-iot.jpg"
-                   class="card-img-top"
-                   style="height:160px;font-size:160px;object-fit:cover;"
-                   alt="Luggage Guardian">
+              <img src="assets/img/project-iot.jpg" class="card-img-top" style="height:160px;object-fit:cover;" alt="Luggage Guardian">
               <div class="card-body">
                 <h5 class="card-title">
                   <a href="projects/detail-iot.html" class="text-dark text-decoration-none">
@@ -947,18 +949,14 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- /Entrepreneurship -->
+      </div><!-- /.tab-pane #iot -->
 
-      <!-- Other Algorithms Pane -->
+      <!-- Other Algorithms & Embedded Pane -->
       <div id="other" class="tab-pane fade">
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
-              <img src="assets/img/project-embedded.jpg"
-                   class="card-img-top"
-                   style="height:160px;object-fit:cover;"
-                   alt="Other Algorithms & Embedded">
+              <img src="assets/img/project-embedded.jpg" class="card-img-top" style="height:160px;object-fit:cover;" alt="Other Algorithms">
               <div class="card-body">
                 <h5 class="card-title">
                   <a href="projects/detail-embedded.html" class="text-dark text-decoration-none">
@@ -973,15 +971,12 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- /Other -->
+      </div><!-- /.tab-pane #other -->
 
-    </div>
-  </div>
+    </div><!-- /.tab-content -->
+  </div><!-- /.resume-section-content -->
 </section>
 <hr class="m-0" />
-
-
 
 <!-- Papers-->
 <section class="resume-section" id="papers">
