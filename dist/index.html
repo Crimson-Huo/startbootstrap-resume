@@ -580,7 +580,7 @@
   <div class="resume-section-content">
     <h2 class="mb-5">Projects</h2>
 
-    <!-- 分类导航 -->
+    <!-- Tabs Navigation -->
     <ul class="nav nav-pills mb-4" id="projects-tabs">
       <li class="nav-item">
         <a class="nav-link active" data-bs-toggle="pill" href="#all">All</a>
@@ -589,13 +589,13 @@
         <a class="nav-link" data-bs-toggle="pill" href="#gnss">GNSS Receiver</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="pill" href="#coding">编码研究</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" data-bs-toggle="pill" href="#pos">Positioning</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="pill" href="#chan">Channel Sounding</a>
+        <a class="nav-link" data-bs-toggle="pill" href="#chan">Channel sounding</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="pill" href="#ofdm">OFDM</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" data-bs-toggle="pill" href="#sense">Wireless Sensing</a>
@@ -604,32 +604,32 @@
         <a class="nav-link" data-bs-toggle="pill" href="#iot">Entrepreneurship (IoT)</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="pill" href="#other">Other Algo & Embedded</a>
+        <a class="nav-link" data-bs-toggle="pill" href="#other">Other Algorithms & Embedded</a>
       </li>
     </ul>
 
-    <!-- 内容面板 -->
+    <!-- Tabs Content -->
     <div class="tab-content">
 
       <!-- All Pane -->
       <div id="all" class="tab-pane fade show active">
         <div class="row g-4">
+
           <!-- DRO_B Satellite / SMILE Satellite -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <img src="assets/img/project-dro.jpg"
                    class="card-img-top"
-                   style="height:160px;object-fit:cover;"
+                   style="height:160px; object-fit:cover;"
                    alt="DRO_B Satellite / SMILE Satellite">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="projects/detail-gnss-dro.html"
-                     class="text-dark text-decoration-none">
+                  <a href="projects/detail-gnss-dro.html" class="text-dark text-decoration-none">
                     DRO_B Satellite / SMILE Satellite
                   </a>
                 </h5>
                 <p class="card-text">
-                  A high-cost, highly interference-resistant, high-sensitivity multi-band GNSS onboard receiver.
+                  A high-cost, high-interference-resistant, high-sensitivity multi-band GNSS onboard receiver.
                 </p>
               </div>
             </div>
@@ -640,38 +640,56 @@
             <div class="card h-100">
               <img src="assets/img/project-xrs.jpg"
                    class="card-img-top"
-                   style="height:160px;object-fit:cover;"
+                   style="height:160px; object-fit:cover;"
                    alt="Quad-band XRS / YangWang Satellite Receiver">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="projects/detail-gnss-xrs.html"
-                     class="text-dark text-decoration-none">
+                  <a href="projects/detail-gnss-xrs.html" class="text-dark text-decoration-none">
                     Quad-band XRS / YangWang Satellite Receiver
                   </a>
                 </h5>
                 <p class="card-text">
-                  A high-dynamic, high-sensitivity satellite receiver designed for commercial aerospace onboard applications.
+                  A high-dynamic, high-sensitivity receiver for commercial aerospace onboard applications.
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- Passive Indoor Positioning -->
+          <!-- Indoor Positioning–Driven Smart Classroom Lighting -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <img src="assets/img/project-pos.jpg"
                    class="card-img-top"
-                   style="height:160px;object-fit:cover;"
-                   alt="Passive Indoor Positioning Smart Classroom Lighting System">
+                   style="height:160px; object-fit:cover;"
+                   alt="Indoor Positioning–Driven Smart Classroom Lighting">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="projects/detail-pos.html"
-                     class="text-dark text-decoration-none">
-                    Passive Indoor Positioning–Based Smart Classroom Lighting System
+                  <a href="projects/detail-pos.html" class="text-dark text-decoration-none">
+                    Indoor Positioning–Driven Smart Classroom Lighting with Occupancy Counting
                   </a>
                 </h5>
                 <p class="card-text">
-                  An intelligent classroom lighting system designed using passive indoor positioning, which greatly reduces resource waste.
+                  The smart classroom lighting system uses two independent methods—passive positioning and occupancy counting—to adjust lighting in real time and save energy.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wireless Communication System for Audio Signals Based on OFDM -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="assets/img/project-ofdm.jpg"
+                   class="card-img-top"
+                   style="height:160px; object-fit:cover;"
+                   alt="OFDM Audio Signals">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="projects/detail-ofdm.html" class="text-dark text-decoration-none">
+                    Wireless Communication System for Audio Signals Based on OFDM
+                  </a>
+                </h5>
+                <p class="card-text">
+                  Custom protocol packets; audio framed into OFDM symbols with QAM modulation, channel estimation and equalization, ensuring reliable transmission in noisy environments.
                 </p>
               </div>
             </div>
@@ -682,12 +700,11 @@
             <div class="card h-100">
               <img src="assets/img/project-base.jpg"
                    class="card-img-top"
-                   style="height:160px;object-fit:cover;"
+                   style="height:160px; object-fit:cover;"
                    alt="Base Station Positioning">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="projects/detail-base.html"
-                     class="text-dark text-decoration-none">
+                  <a href="projects/detail-base.html" class="text-dark text-decoration-none">
                     Base Station Positioning
                   </a>
                 </h5>
@@ -703,12 +720,11 @@
             <div class="card h-100">
               <img src="assets/img/project-chan.jpg"
                    class="card-img-top"
-                   style="height:160px;object-fit:cover;"
+                   style="height:160px; object-fit:cover;"
                    alt="Channel Sounding">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="projects/detail-chan.html"
-                     class="text-dark text-decoration-none">
+                  <a href="projects/detail-chan.html" class="text-dark text-decoration-none">
                     Channel Sounding
                   </a>
                 </h5>
@@ -719,22 +735,21 @@
             </div>
           </div>
 
-          <!-- Energy-Aware Millimeter-Wave Radar Eye Movement -->
+          <!-- ES-Eyes: Radar Eye-Movement Monitoring -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <img src="assets/img/project-eye.jpg"
                    class="card-img-top"
-                   style="height:160px;object-fit:cover;"
-                   alt="Energy-Aware Millimeter-Wave Radar Eye Movement Monitoring Design">
+                   style="height:160px; object-fit:cover;"
+                   alt="ES-Eyes">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="projects/detail-eye.html"
-                     class="text-dark text-decoration-none">
-                    Energy-Aware Millimeter-Wave Radar Eye Movement Monitoring Design
+                  <a href="projects/detail-eye.html" class="text-dark text-decoration-none">
+                    ES-Eyes: Millimeter-Wave Radar Eye-Movement Monitoring
                   </a>
                 </h5>
                 <p class="card-text">
-                  Non-contact energy-aware micro-Doppler fusion detects blinks and eye closures with 93.2% accuracy and 0.0487 blinks/sec error.
+                  Non-contact micro-Doppler fusion detects blinks with 93.2% accuracy and 0.0487 blinks/sec error.
                 </p>
               </div>
             </div>
@@ -745,46 +760,44 @@
             <div class="card h-100">
               <img src="assets/img/project-iot.jpg"
                    class="card-img-top"
-                   style="height:160px;object-fit:cover;"
+                   style="height:160px; object-fit:cover;"
                    alt="IoT Luggage Guardian">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="projects/detail-iot.html"
-                     class="text-dark text-decoration-none">
+                  <a href="projects/detail-iot.html" class="text-dark text-decoration-none">
                     IoT “Luggage Guardian”
                   </a>
                 </h5>
                 <p class="card-text">
-                  Gyro/RSSI/GPS-based smart tracker.
+                  Gyro/RSSI/GPS-based smart luggage tracker.
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- Other Algorithm & Embedded Design -->
+          <!-- Other Algorithms & Embedded Designs -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <img src="assets/img/project-embedded.jpg"
                    class="card-img-top"
-                   style="height:160px;object-fit:cover;"
-                   alt="Other Algorithm & Embedded Design">
+                   style="height:160px; object-fit:cover;"
+                   alt="Other Algorithms & Embedded">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="projects/detail-embedded.html"
-                     class="text-dark text-decoration-none">
-                    Other Algorithm & Embedded Design
+                  <a href="projects/detail-embedded.html" class="text-dark text-decoration-none">
+                    Other Algorithms & Embedded Designs
                   </a>
                 </h5>
                 <ul class="card-text ps-3 mb-0">
                   <li>Environmental Control System</li>
-                  <li>Intelligent Line-Following Car</li>
+                  <li>Line-Following Intelligent Car</li>
                 </ul>
               </div>
             </div>
           </div>
 
         </div>
-      </div><!-- /#all -->
+      </div><!-- /.tab-pane #all -->
 
       <!-- GNSS Receiver Pane -->
       <div id="gnss" class="tab-pane fade">
@@ -794,29 +807,27 @@
             <div class="card h-100">
               <img src="assets/img/project-dro.jpg"
                    class="card-img-top"
-                   style="height:160px;object-fit:cover;"
-                   alt="DRO_B Satellite / SMILE Satellite">
+                   style="height:160px; object-fit:cover;"
+                   alt="DRO_B Satellite">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="projects/detail-gnss-dro.html"
-                     class="text-dark text-decoration-none">
+                  <a href="projects/detail-gnss-dro.html" class="text-dark text-decoration-none">
                     DRO_B Satellite / SMILE Satellite
                   </a>
                 </h5>
               </div>
             </div>
           </div>
-          <!-- XRS Satellite -->
+          <!-- XRS Receiver -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <img src="assets/img/project-xrs.jpg"
                    class="card-img-top"
-                   style="height:160px;object-fit:cover;"
-                   alt="Quad-band XRS / YangWang Satellite Receiver">
+                   style="height:160px; object-fit:cover;"
+                   alt="XRS Receiver">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="projects/detail-gnss-xrs.html"
-                     class="text-dark text-decoration-none">
+                  <a href="projects/detail-gnss-xrs.html" class="text-dark text-decoration-none">
                     Quad-band XRS / YangWang Satellite Receiver
                   </a>
                 </h5>
@@ -824,53 +835,31 @@
             </div>
           </div>
         </div>
-      </div><!-- /#gnss -->
-
-      <!-- Coding Research Pane -->
-      <div id="coding" class="tab-pane fade">
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="projects/detail-coding.html"
-                     class="text-dark text-decoration-none">
-                    Blockwise Classification 纠错方法研究
-                  </a>
-                </h5>
-                <p class="card-text">
-                  A study of an error-correction method integrating blockwise classification, spectral correction, and hedged ridge regression.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>  
-      </div><!-- /#coding -->
+      </div><!-- /.tab-pane #gnss -->
 
       <!-- Positioning Pane -->
       <div id="pos" class="tab-pane fade">
         <div class="row g-4">
-          <!-- Passive Indoor Positioning -->
+          <!-- Indoor Positioning Lighting -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <img src="assets/img/project-pos.jpg"
                    class="card-img-top"
-                   style="height:160px;object-fit:cover;"
-                   alt="Passive Indoor Positioning Smart Classroom Lighting System">
+                   style="height:160px; object-fit:cover;"
+                   alt="Indoor Positioning Lighting">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="projects/detail-pos.html"
-                     class="text-dark text-decoration-none">
-                    Passive Indoor Positioning–Based Smart Classroom Lighting System
+                  <a href="projects/detail-pos.html" class="text-dark text-decoration-none">
+                    Indoor Positioning–Driven Smart Classroom Lighting with Occupancy Counting
                   </a>
                 </h5>
               </div>
             </div>
           </div>
         </div>
-      </div><!-- /#pos -->
+      </div><!-- /.tab-pane #pos -->
 
-      <!-- Channel Sounding Pane -->
+      <!-- Channel sounding Pane -->
       <div id="chan" class="tab-pane fade">
         <div class="row g-4">
           <!-- Channel Sounding -->
@@ -878,43 +867,81 @@
             <div class="card h-100">
               <img src="assets/img/project-chan.jpg"
                    class="card-img-top"
-                   style="height:160px;object-fit:cover;"
+                   style="height:160px; object-fit:cover;"
                    alt="Channel Sounding">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="projects/detail-chan.html"
-                     class="text-dark text-decoration-none">
+                  <a href="projects/detail-chan.html" class="text-dark text-decoration-none">
                     Channel Sounding
                   </a>
                 </h5>
               </div>
             </div>
           </div>
-        </div>
-      </div><!-- /#chan -->
-
-      <!-- Wireless Sensing Pane -->
-      <div id="sense" class="tab-pane fade">
-        <div class="row g-4">
-          <!-- Eye Movement Project -->
+          <!-- OFDM Audio Signals also here -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
-              <img src="assets/img/project-eye.jpg"
+              <img src="assets/img/project-ofdm.jpg"
                    class="card-img-top"
-                   style="height:160px;object-fit:cover;"
-                   alt="Energy-Aware Millimeter-Wave Radar Eye Movement Monitoring Design">
+                   style="height:160px; object-fit:cover;"
+                   alt="OFDM Audio Signals">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="projects/detail-eye.html"
-                     class="text-dark text-decoration-none">
-                    Energy-Aware Millimeter-Wave Radar Eye Movement Monitoring Design
+                  <a href="projects/detail-ofdm.html" class="text-dark text-decoration-none">
+                    Wireless Communication System for Audio Signals Based on OFDM
                   </a>
                 </h5>
               </div>
             </div>
           </div>
         </div>
-      </div><!-- /#sense -->
+      </div><!-- /.tab-pane #chan -->
+
+      <!-- OFDM Pane -->
+      <div id="ofdm" class="tab-pane fade">
+        <div class="row g-4">
+          <!-- OFDM Audio Signals -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="assets/img/project-ofdm.jpg"
+                   class="card-img-top"
+                   style="height:160px; object-fit:cover;"
+                   alt="OFDM Audio Signals">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="projects/detail-ofdm.html" class="text-dark text-decoration-none">
+                    Wireless Communication System for Audio Signals Based on OFDM
+                  </a>
+                </h5>
+                <p class="card-text">
+                  Custom protocol packets; audio framed into OFDM symbols with QAM modulation, channel estimation and equalization, ensuring reliable transmission in noisy environments.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.tab-pane #ofdm -->
+
+      <!-- Wireless Sensing Pane -->
+      <div id="sense" class="tab-pane fade">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="assets/img/project-eye.jpg"
+                   class="card-img-top"
+                   style="height:160px; object-fit:cover;"
+                   alt="ES-Eyes">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="projects/detail-eye.html" class="text-dark text-decoration-none">
+                    ES-Eyes: Millimeter-Wave Radar Eye-Movement Monitoring
+                  </a>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.tab-pane #sense -->
 
       <!-- Entrepreneurship (IoT) Pane -->
       <div id="iot" class="tab-pane fade">
@@ -924,69 +951,66 @@
             <div class="card h-100">
               <img src="assets/img/project-iot.jpg"
                    class="card-img-top"
-                   style="height:160px;object-fit:cover;"
+                   style="height:160px; object-fit:cover;"
                    alt="IoT Luggage Guardian">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="projects/detail-iot.html"
-                     class="text-dark text-decoration-none">
+                  <a href="projects/detail-iot.html" class="text-dark text-decoration-none">
                     IoT “Luggage Guardian”
                   </a>
                 </h5>
               </div>
             </div>
           </div>
-          <!-- Also include Passive Indoor Positioning -->
+          <!-- also include positioning lighting -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <img src="assets/img/project-pos.jpg"
                    class="card-img-top"
-                   style="height:160px;object-fit:cover;"
-                   alt="Passive Indoor Positioning Smart Classroom Lighting System">
+                   style="height:160px; object-fit:cover;"
+                   alt="Indoor Positioning Lighting">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="projects/detail-pos.html"
-                     class="text-dark text-decoration-none">
-                    Passive Indoor Positioning–Based Smart Classroom Lighting System
+                  <a href="projects/detail-pos.html" class="text-dark text-decoration-none">
+                    Indoor Positioning–Driven Smart Classroom Lighting with Occupancy Counting
                   </a>
                 </h5>
               </div>
             </div>
           </div>
         </div>
-      </div><!-- /#iot -->
+      </div><!-- /.tab-pane #iot -->
 
-      <!-- Other Algorithm & Embedded Design Pane -->
+      <!-- Other Algorithms & Embedded Pane -->
       <div id="other" class="tab-pane fade">
         <div class="row g-4">
-          <!-- Other Algorithm & Embedded Design -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <img src="assets/img/project-embedded.jpg"
                    class="card-img-top"
-                   style="height:160px;object-fit:cover;"
-                   alt="Other Algorithm & Embedded Design">
+                   style="height:160px; object-fit:cover;"
+                   alt="Other Algorithms & Embedded">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="projects/detail-embedded.html"
-                     class="text-dark text-decoration-none">
-                    Other Algorithm & Embedded Design
+                  <a href="projects/detail-embedded.html" class="text-dark text-decoration-none">
+                    Other Algorithms & Embedded Designs
                   </a>
                 </h5>
                 <ul class="card-text ps-3 mb-0">
                   <li>Environmental Control System</li>
-                  <li>Intelligent Line-Following Car</li>
+                  <li>Line-Following Intelligent Car</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-      </div><!-- /#other -->
+      </div><!-- /.tab-pane #other -->
 
     </div><!-- /.tab-content -->
   </div><!-- /.resume-section-content -->
 </section>
 <hr class="m-0" />
+
 
 <!-- Papers-->
 <section class="resume-section" id="papers">
