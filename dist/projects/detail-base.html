@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Base Station Positioning</title>
+  <title>Blockwise Classification: Resolving Inconsistencies with Spectral Correction and Hedged Ridge Regression</title>
   <link rel="icon" href="../assets/img/favicon.ico" />
   <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -15,7 +15,7 @@
   <!-- Global Styles -->
   <link href="../css/styles.css" rel="stylesheet" />
   <style>
-    /* Local overrides for project detail */
+    /* Local overrides */
     .project-header {
       padding-top: 4.5rem;
       text-align: center;
@@ -29,7 +29,7 @@
       margin: 1rem auto;
     }
     .project-title {
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-family: 'Saira Extra Condensed', sans-serif;
       margin-bottom: 0.5rem;
       text-align: center;
@@ -47,7 +47,16 @@
       color: #444;
     }
     .contact-icons {
-      display: none; /* no contact icons for this page */
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .contact-icons a {
+      font-size: 1.5rem;
+      margin: 0 .5rem;
+      color: #333;
+    }
+    .related-links {
+      display: none; /* no related links */
     }
   </style>
 </head>
@@ -87,19 +96,31 @@
 
   <!-- Project Header -->
   <header class="project-header">
-    <h1 class="project-title">Base Station Positioning</h1>
-    <div class="project-date">July 10, 2025</div>
+    <h1 class="project-title">Blockwise Classification: Resolving<br>Inconsistencies with Spectral Correction and Hedged Ridge Regression</h1>
+    <div class="project-date">2024 February 27</div>
     <img
-      src="../assets/img/project-base.jpg"
-      alt="Base Station Positioning overview"
+      src="../assets/img/project-code.jpg"
+      alt="Blockwise Classification overview"
     />
   </header>
 
   <!-- Project Content -->
   <section class="project-content">
     <p>
-      In the quest for enhanced location accuracy, base station positioning emerges as an indispensable tool for augmenting GPS technology. This paper begins by employing a channel attenuation model to preprocess the collected data through a series of steps, including outlier detection, median filtering, and Kalman filtering, aimed at accurately estimating the propagation exponent and precisely simulating the environment. Subsequently, it integrates measurements from multiple base stations, assigning different weights to each, to refine the data processing approach further. Ultimately, through iterative application of the least squares method, this text successfully achieves precise location determination.
+      This project addresses prediction instability in image classification under degraded-noise and few-sample conditions by developing a lightweight post-processing error-correction framework. The system first runs multiple classifiers in parallel (OvO and OvA SVMs, plus KNN) and aggregates their outputs into a redundant prediction matrix. Next, drawing on the Blockwise Classification approach, it applies spectral decomposition to extract principal feature vectors and automatically correct mislabels. Finally, it fuses the original predictions with the spectrally corrected results via a structured-regularization “hedged” ridge regression, significantly boosting accuracy while keeping the model lightweight and computationally efficient.
     </p>
+    <p>
+      Under the guidance of Professors Michael and Johan, I led the formulation of the “hedged” ridge regression concept, collaborating with the team on algorithm development and simulation. This mathematical insight effectively mitigated mis-correction of principal feature values in challenging scenarios, further enhancing the framework’s robustness and precision.
+    </p>
+
+    <div class="contact-icons">
+      <a href="mailto:huochunguang2021@163.com"><i class="fas fa-envelope"></i></a>
+      <a
+        href="https://www.linkedin.com/in/chunguang-huo-32070829b"
+        target="_blank"
+        rel="noopener"
+      ><i class="fab fa-linkedin-in"></i></a>
+    </div>
   </section>
 
   <!-- Bootstrap JS & Core Script -->
