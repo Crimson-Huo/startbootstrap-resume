@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Other Algorithms & Embedded Designs</title>
+  <link rel="icon" href="../assets/img/favicon.ico" />
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Global Styles -->
+  <link href="../css/styles.css" rel="stylesheet" />
+  <style>
+    .project-header {
+      padding-top: 4.5rem;
+      text-align: center;
+    }
+    .project-header img {
+      max-width: 800px;
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      display: block;
+      margin: 1rem auto;
+    }
+    .project-title {
+      font-size: 2rem;
+      font-family: 'Saira Extra Condensed', sans-serif;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+    .project-date {
+      text-align: center;
+      color: #888;
+      margin-bottom: 1.5rem;
+    }
+    .project-content {
+      max-width: 800px;
+      margin: 2rem auto;
+      line-height: 1.6;
+      font-size: 1rem;
+      color: #444;
+    }
+    .project-content h2 {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #333;
+    }
+    .project-content ul {
+      margin-left: 1.25rem;
+      list-style: disc;
+    }
+    .contact-icons {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .contact-icons a {
+      font-size: 1.5rem;
+      margin: 0 .5rem;
+      color: #333;
+    }
+    .related-links {
+      max-width: 800px;
+      margin: 2rem auto;
+    }
+    .related-links ul {
+      padding-left: 1rem;
+    }
+    .related-links a {
+      color: #A14D2E;
+      text-decoration: none;
+    }
+    .related-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body id="page-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="../index.html#page-top">
+      <span class="d-block d-lg-none">Chunguang Huo</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+             src="../assets/img/profile.jpg" alt="Profile" />
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#interests">Research Interests</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#awards">Honors & Awards</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Project Header -->
+  <header class="project-header">
+    <h1 class="project-title">Other Algorithms & Embedded Designs</h1>
+    <div class="project-date">2019 – 2020</div>
+    <img src="../assets/img/project-embedded.jpg"
+         alt="Environmental Control System & Line-Following Car overview" />
+  </header>
+
+  <!-- Project Content -->
+  <section class="project-content">
+    <h2>Environmental Control System</h2>
+    <p>
+      This project addresses the growing demand for user-friendly, intelligent management of planting, incubation, factory equipment, and smart-home environments. Centered on a cloud-based monitoring platform, the system integrates data acquisition, analysis, and control to maintain strict environmental conditions and provide timely alerts. Key components include:
+    </p>
+    <ul>
+      <li><strong>Cloud Monitoring Center</strong> – Collects, stores, and analyzes real-time temperature, humidity, light, and gas data while running predictive algorithms to forecast trends.</li>
+      <li><strong>LoRa + GPRS Data Network</strong> – A dual-mode wireless backbone that ensures reliable, long-range transmission from distributed sensor nodes to the cloud.</li>
+      <li><strong>Edge Gateway</strong> – A configurable MCU-based gateway that aggregates sensor data, executes local safety logic, and relays commands from the cloud to actuators.</li>
+      <li><strong>Mobile Client</strong> – Enables users to view live dashboards, receive alarms, and remotely adjust environmental parameters anytime, anywhere.</li>
+    </ul>
+
+    <h2>Line-Following Intelligent Car</h2>
+    <p>
+      To overcome the low accuracy, slow response, and poor adaptability of conventional line-following robots, this project proposes an adaptive speed-controlled intelligent car for complex environments. Core features include:
+    </p>
+    <ul>
+      <li><strong>MSP430F149 Main Controller</strong> – Handles sensor fusion, motor control, and real-time decision making with low power consumption.</li>
+      <li><strong>Infrared Sensor Array with Max-Angle Layout</strong> – Multiple IR pairs are time-multiplexed and shielded by light-blocking baffles to maintain precise path detection under varying ambient light.</li>
+      <li><strong>Adaptive Speed Control</strong> – The car dynamically adjusts velocity according to turning radius; initial speed is set via on-board buttons and displayed on an LCD, with non-volatile storage to retain settings after power-down.</li>
+      <li><strong>Stop-Line Detection & Voice Control</strong> – The system recognizes stop lines for accurate halting and supports voice commands to start or stop the vehicle.</li>
+      <li><strong>DC Geared Motors</strong> – Provide stable propulsion with feedback for closed-loop speed regulation.</li>
+    </ul>
+    <p>
+      This design achieves high-precision tracking, fast response, and broad environmental compatibility—making it suitable for educational demos, warehouse logistics, and autonomous navigation research.
+    </p>
+
+    <div class="contact-icons">
+      <a href="mailto:huochunguang2021@163.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/chunguang-huo-32070829b" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Related Links -->
+  <section class="related-links">
+    <h4>Related Papers</h4>
+    <ul>
+      <li>
+        <a href="../papers/detail-paper-1.html">
+          Design of an Intelligent Greenhouse Control System Based on LoRa (Chinese-to-English Translation)
+        </a>
+      </li>
+      <li>
+        <a href="../papers/detail-paper-2.html">
+          Design of Adaptive Speed Regulating Vehicle System for Precise Tracking in Complex Environment
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Bootstrap JS & Core Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/scripts.js"></script>
+</body>
+</html>
