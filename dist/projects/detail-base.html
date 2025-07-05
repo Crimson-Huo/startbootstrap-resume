@@ -104,7 +104,8 @@
   <!-- Project Content -->
   <section class="project-content">
     <p>
-      In the quest for enhanced location accuracy, base station positioning emerges as an indispensable tool for augmenting GPS technology. This paper begins by employing a channel attenuation model to preprocess the collected data through a series of steps, including outlier detection, median filtering, and Kalman filtering, aimed at accurately estimating the propagation exponent and precisely simulating the environment. Subsequently, it integrates measurements from multiple base stations, assigning different weights to each, to refine the data processing approach further. Ultimately, through iterative application of the least squares method, this project successfully achieves precise location determination.
+      In this project, we enhanced GPS accuracy in outdoor environments using a multi–base station fusion approach. First, as shown in the left figure, we preprocessed the collected signals from multiple base stations using a channel attenuation model—applying outlier detection, median filtering, and Kalman filtering to accurately estimate the propagation exponent and reconstruct the propagation model. Next, we fused measurements from each base station with different weights to form a weighted distance equation. Finally, by iteratively applying the least squares method, we solved for the user’s position. The estimated coordinate (intersection point in the left plot) aligns closely with the actual location on the gridded map (right figure). This method achieves meter-level or even sub-meter accuracy in complex outdoor scenarios, providing robust technical support for high-reliability outdoor navigation and positioning systems.
+
     </p>
 
     <div class="contact-icons">
