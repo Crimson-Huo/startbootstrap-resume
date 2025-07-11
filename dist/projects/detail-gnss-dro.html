@@ -99,14 +99,34 @@
     />
   </header>
 
-  <!-- Project Body -->
-  <section class="project-content">
-    <p>
-      <strong>Focus:</strong> high-stability, high-dynamic GNSS onboard receiver that is highly interference-resistant, high-sensitivity, multi-band, and multifunctional.
-    </p>
-    <p>
-      These two projects were the national key Distant Retrograde Orbit (DRO) exploration research and the China–Europe SMILE (Solar wind–Magnetosphere–Ionosphere Link Exploration) mission. Our team was primarily responsible for designing the satellite’s onboard receiver, which supports multi-constellation, multi-frequency GNSS signals (e.g., GPS Lx, BDS Bx, Galileo Ex, and GLONASS Gx main bands). In these projects, I led the system protocol design, developed the system reconfiguration functionality, and implemented the intermediate-frequency data acquisition module. Testing showed that the newly introduced reconfiguration feature improved update speed by approximately 25% compared to the previous manual download method.
-    </p>
+<!-- Project Body -->
+<section class="project-content">
+  <p>
+    <strong>Focus:</strong> high-stability, high-dynamic GNSS onboard receiver that is highly interference-resistant, high-sensitivity, multi-band, and multifunctional.
+  </p>
+
+  <p>
+    These projects cover both the national key Distant Retrograde Orbit (DRO) exploration research and the China–Europe <em>SMILE</em>
+    (Solar wind–Magnetosphere–Ionosphere Link Exploration) mission.  
+    Our team designed the satellites’ onboard receivers, supporting multi-constellation, multi-frequency GNSS signals (GPS Lx, BDS Bx, Galileo Ex, GLONASS Gx, etc.).  
+    I led the system-level protocol design, built the DSP-driven FPGA reconfiguration capability, and implemented the IF data-acquisition module.  
+    Ground testing showed that the new reconfiguration path cuts upgrade time by&nbsp;≈ 25 % versus the previous manual download method.
+  </p>
+
+  <!-----  New content added below  --->
+  <p><strong>Key technical designs:</strong></p>
+  <ul>
+    <li><em>Dedicated time-slice & task —</em> reserved an exclusive slot in the DSP scheduler and created a standalone task, ensuring in-orbit upgrades never disturb telemetry, telecommand, or payload links.</li>
+    <li><em>Dual-image + CRC backup —</em> implemented mirror redundancy with CRC integrity checks; the DSP auto-rolls back on anomalies, preventing boot-lock.</li>
+    <li><em>Resource-adaptive engine —</em> dynamically tunes bandwidth and system parameters in line with Flash capacity and device count, safeguarding robustness under tight resource margins.</li>
+    <li><em>Configurable bus adapter —</em> self-developed logic enables one-click switching between CAN and RS-422, slashing platform porting cost.</li>
+    <li><em>End-to-end automated test suite —</em> authored test software and co-verified with the upper-computer team, covering every upgrade/rollback path for rapid fault localisation.</li>
+    <li><em>Comprehensive documentation —</em> produced operation protocols and principle guides to support long-term delivery and maintenance.</li>
+  </ul>
+
+  <p><strong>Results:</strong> delivered in 50 % of the planned schedule; ground tests confirm &gt; 25 % faster upgrades, 100 % test coverage with first-pass success; modular architecture trims cross-platform porting to mere days.</p>
+  <p><strong>Tech stack:</strong> DSP firmware • CAN / RS-422 • hot reconfiguration • C • time-slice scheduling • automated test scripts</p>
+
 
     <!-- 联系方式 图标 -->
     <div class="contact-icons">
