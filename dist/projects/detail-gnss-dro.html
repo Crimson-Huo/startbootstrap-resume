@@ -109,12 +109,11 @@
     These projects cover both the national key Distant Retrograde Orbit (DRO) exploration research and the China–Europe <em>SMILE</em>
     (Solar wind–Magnetosphere–Ionosphere Link Exploration) mission.  
     Our team designed the satellites’ onboard receivers, supporting multi-constellation, multi-frequency GNSS signals (GPS Lx, BDS Bx, Galileo Ex, GLONASS Gx, etc.).  
-    I led the system-level protocol design, built the DSP-driven FPGA reconfiguration capability, and implemented the IF data-acquisition module.  
-    Ground testing showed that the new reconfiguration path cuts upgrade time by&nbsp;≈ 25 % versus the previous manual download method.
+    I led the system-level protocol design, built the <strong>DSP-based system-upgrade</strong> capability, and implemented the IF data-acquisition module.  
+    Ground testing showed that the new upgrade flow cuts upgrade time by&nbsp;≈ 25 % versus the previous manual download method.
   </p>
 
-  <!-----  New content added below  --->
-  <p><strong>Key system-reconfiguration technical designs:</strong></p>
+  <p><strong>Key system-upgrade technical designs:</strong></p>
   <ul>
     <li><em>Dedicated time-slice & task —</em> reserved an exclusive slot in the DSP scheduler and created a standalone task, ensuring in-orbit upgrades never disturb telemetry, telecommand, or payload links.</li>
     <li><em>Dual-image + CRC backup —</em> implemented mirror redundancy with CRC integrity checks; the DSP auto-rolls back on anomalies, preventing boot-lock.</li>
@@ -125,7 +124,7 @@
   </ul>
 
   <p><strong>Results:</strong> delivered in 50 % of the planned schedule; ground tests confirm &gt; 25 % faster upgrades, 100 % test coverage with first-pass success; modular architecture trims cross-platform porting to mere days.</p>
-  <p><strong>Tech stack:</strong> DSP firmware • CAN / RS-422 • hot reconfiguration • C • time-slice scheduling • automated test scripts</p>
+  <p><strong>Tech stack:</strong> DSP firmware • CAN / RS-422 • hot system upgrade • C • time-slice scheduling • automated test scripts</p>
 
 
     <!-- 联系方式 图标 -->
