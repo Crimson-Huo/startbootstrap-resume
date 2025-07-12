@@ -110,16 +110,45 @@
     />
   </header>
 
-  <!-- Project Content -->
-  <section class="project-content">
-    <p>
-      <strong>Focus:</strong>
-      A high-dynamic, high-sensitivity satellite receiver designed for commercial aerospace onboard applications.
-    </p>
-    <p>
-      These studies were primarily applied to commercial spacecraft, requiring high-sensitivity signal reception at low cost and supporting main frequency bands GPS L1/L2 and Beidou B1/B3. I was fully responsible for the software development, which included designing protocols and features according to client requirements, implementing the software, conducting system reliability testing, and providing ongoing software maintenance.
-    </p>
+<!-- Project Content -->
+<section class="project-content">
+  <p>
+    <strong>Focus:</strong>
+    A high-dynamic, high-sensitivity satellite receiver designed for commercial aerospace onboard applications.
+  </p>
+  <p>
+    These studies were primarily applied to commercial spacecraft, requiring high-sensitivity signal reception at low cost and supporting the main frequency bands GPS L1/L2 and BeiDou B1/B3.  
+    I was fully responsible for the software development, which included designing protocols, an intermediate-frequency (IF) data-acquisition feature, and other client-driven functionalities; implementing the software; conducting system-reliability testing; and providing ongoing maintenance.
+  </p>
+</section>
 
+<!-- Additional Project Content -->
+<section class="project-content">
+  <p>
+    <strong>XRS, YangWang-2 &amp; DFH Satellite Series — Multi-Constellation GNSS Receiver | Core Developer | IF Data Acquisition &amp; Protocol/Feature Design | May 2023</strong>
+  </p>
+
+  <p><strong>Background / Goal:</strong> Build from scratch a highly compatible and reliable GNSS receiver that supports multi-band GPS / BeiDou / Galileo / GLONASS signals, with a focus on loss-free collection of 31 MB continuous IF data.</p>
+
+  <p><strong>Key technical designs:</strong></p>
+  <ul>
+    <li><em>Autonomous communication protocol stack:</em> Independently authored navigation-link specifications for the B045, YangWang-2 and DFH platforms.</li>
+    <li><em>Interface-driver development:</em> Implemented and tuned embedded drivers for CAN or RS-422 interfaces and designed the accompanying protocol frames.</li>
+    <li><em>IF data-acquisition thread:</em> Used a DMA + dedicated time-slice parallel architecture to read 31 MB of continuous data at high speed with zero-bit loss and no impact on other tasks.</li>
+    <li><em>Data-integrity verification algorithm:</em> Created bespoke checking protocols and parsing scripts to detect bit errors or losses in IF data and pinpoint their locations.</li>
+    <li><em>Navigation-algorithm co-debugging:</em> Performed closed-loop tuning of acquisition, tracking and synchronisation parameters to meet satellite-count and sensitivity targets.</li>
+    <li><em>GNSS-simulator testing:</em> Ran independent functional/performance tests with a GNSS signal simulator and cooperated with the test team for system-reliability validation.</li>
+    <li><em>Technical documentation:</em> Compiled operating protocols and principle manuals to support delivery and long-term maintenance.</li>
+  </ul>
+
+  <p><strong>Key achievements:</strong></p>
+  <ul>
+    <li>All tasks delivered on schedule; receiver sensitivity exceeded system targets by 2 dBm.</li>
+    <li>IF data-acquisition system ran stably with <strong>zero bit errors</strong> during testing.</li>
+    <li>Automated test cases achieved 100 % coverage and enabled loss-free high-speed transfer.</li>
+  </ul>
+
+  <p><strong>Tech stack:</strong> C • GNSS-protocol design • DMA • ZYNQ • DSP • Navigation algorithms • GNSS-simulator scripting</p>
     <div class="contact-icons">
       <a href="mailto:huochunguang2021@163.com"><i class="fas fa-envelope"></i></a>
       <a
